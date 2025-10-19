@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         /* Метод разворота матрицы (разворачивает матрицу в случае, если количество строк одной матрицы равно количеству
          * столбцов другой; соответственно для количества столбцов первой матрицы. Не производит перезаписи матриц во
-         * всех остальных случаях. */
+         * всех остальных случаях). */
         public static int[,] Turn(int[,] matrix1, int[,] matrix2, int i, int j, int m, int n)
         {
             if (i - n - j + m == 0) // (альтернативная форма записи: i - j == n - m)
@@ -40,7 +40,7 @@ namespace ConsoleApp2
             return matrix1;
         }
 
-        // Метод подсчета суммы сложения матриц.
+        // Метод подсчета суммы матриц.
         public static void MatrixSum(int[,] matrix1, int[,] matrix2)
         {
             for (int a = 0; a < matrix1.GetLength(0); a++)
@@ -79,7 +79,7 @@ namespace ConsoleApp2
                     {
                         result += (matrix1[a, c] * matrix2[c, b]);
                     }
-                    Console.Write("c({0}{1}) {2} {3}", result, "\t");
+                    Console.Write("c({0}{1}) {2} {3}", a, b, result, "\t");
                     result = 0;
                 }
                 Console.WriteLine();
@@ -140,50 +140,6 @@ namespace ConsoleApp2
                 Console.WriteLine();
             }
         }
-
-        // Реализация оператора цикличекого битового сдвига.
-        public static string CycleShift(int var, int shiftSteps)
-        {
-            int len = Convert.ToString(var, 2).Length;
-            for (int i = 0; i < shiftSteps; i++)
-            {
-                int temp = var;
-                for (int j = 0; j < len - 1; j++)
-                    temp = temp >> 1;
-                var = var & (~(1 << len - 1));
-                var = (var << 1) | temp;
-            }
-            string varEdited = Convert.ToString(var, 2);
-            while (varEdited.Length % 3 != 0)
-            {
-                varEdited = "0" + varEdited;
-            }
-            return varEdited;
-        }
-
-        // Метод добавления ведущих незначащих нулей в строковое представление двоичной записи числа.
-        public static string TriadAddition(string str)
-        {
-            while (str.Length % 3 != 0)
-                str = "0" + str;
-
-            return str;
-        }
-
-        // Метод смены мест третьей и первой триад битов двоичной записи числа.
-        public static string Swap(int num)
-        {
-            int temp = num;
-            int lenght = TriadAddition(Convert.ToString(num, 2)).Length;
-            for (int i = 6; i < lenght; i++)
-                temp = temp & (~(1 << i));
-
-            temp = Convert.ToInt32(CycleShift(temp, 3), 2);
-            num = (num & ~63 | temp);
-
-            return Convert.ToString(num, 2);
-        }
-
         static void Main(string[] args)
         {
             string option1, option2;
@@ -240,78 +196,85 @@ namespace ConsoleApp2
                             matrix1 = Turn(matrix1, matrix2, i, j, m, n);
                             Console.WriteLine();
 
-                            Console.WriteLine("Ваша первая матрица: ");
-                            for (int a = 0; a < matrix1.GetLength(0); a++)
+                            if (i - j - m + n == 0)
                             {
-                                for (int b = 0; b < matrix1.GetLength(1); b++)
+                                Console.WriteLine("Ваша первая матрица: ");
+                                for (int a = 0; a < matrix1.GetLength(0); a++)
                                 {
-                                    Console.Write("(a{0}{1}) {2} \t", a + 1, b + 1, matrix1[a, b]);
+                                    for (int b = 0; b < matrix1.GetLength(1); b++)
+                                    {
+                                        Console.Write("(a{0}{1}) {2} \t", a + 1, b + 1, matrix1[a, b]);
+                                    }
+                                    Console.WriteLine();
                                 }
-                                Console.WriteLine();
+
+                                Console.WriteLine("Ваша вторая матрица: ");
+                                for (int a = 0; a < matrix2.GetLength(0); a++)
+                                {
+                                    for (int b = 0; b < matrix2.GetLength(1); b++)
+                                    {
+                                        Console.Write("(b{0}{1}) {2} \t", a + 1, b + 1, matrix2[a, b]);
+                                    }
+                                    Console.WriteLine();
+                                }
+
+                                while (run == true)
+                                {
+                                    Console.WriteLine("\nВыберите опцию: \n(1) Сложение матриц \n(2) Вычитание матриц \n(3) Умножение матриц \n(4) Умножение матрицы на число\n(5) Сравнение элементов матриц \n(6) Выход");
+                                    option2 = Console.ReadLine();
+                                    Console.WriteLine();
+
+                                    switch (option2)
+                                    {
+                                        case ("1"): // Сложение.
+                                            {
+                                                MatrixSum(matrix1, matrix2);
+                                            }
+                                            break;
+
+                                        case ("2"): // Вычитание.
+                                            {
+                                                MatrixDif(matrix1, matrix2);
+                                            }
+                                            break;
+
+                                        case ("3"): // Умножение матрицы на матрицу.
+                                            {
+                                                MatXMat(matrix1, matrix2);
+                                            }
+                                            break;
+
+                                        case ("4"): // Умножение матрицы на число.
+                                            {
+                                                MatrixMult(matrix1, matrix2);
+                                            }
+                                            break;
+
+                                        case ("5"): // Сравнение элементов матриц.
+                                            {
+                                                MatrixComparasion(matrix1, matrix2);
+                                            }
+                                            break;
+
+                                        case ("6"):
+                                            {
+                                                run = false;
+                                                Console.WriteLine("Вы вышли из раздела.");
+                                                Console.ReadLine();
+                                            }
+                                            break;
+
+                                        default:
+                                            {
+                                                Console.WriteLine("Некорректный ввод. Введите номер функции повторно.");
+                                            }
+                                            break;
+                                    }
+                                }
                             }
-
-                            Console.WriteLine("Ваша вторая матрица: ");
-                            for (int a = 0; a < matrix1.GetLength(0); a++)
+                            else
                             {
-                                for (int b = 0; b < matrix1.GetLength(1); b++)
-                                {
-                                    Console.Write("(b{0}{1}) {2} \t", a + 1, b + 1, matrix2[a, b]);
-                                }
-                                Console.WriteLine();
-                            }
-
-                            while (run == true)
-                            {
-                                Console.WriteLine("\nВыберите опцию: \n(1) Сложение матриц \n(2) Вычитание матриц \n(3) Умножение матриц \n(4) Умножение матрицы на число\n(5) Сравнение элементов матриц \n(6) Выход");
-                                option2 = Console.ReadLine();
-                                Console.WriteLine();
-
-                                switch (option2)
-                                {
-                                    case ("1"): // Сложение.
-                                        {
-                                            MatrixSum(matrix1, matrix2);
-                                        }
-                                        break;
-
-                                    case ("2"): // Вычитание.
-                                        {
-                                            MatrixDif(matrix1, matrix2);
-                                        }
-                                        break;
-
-                                    case ("3"): // Умножение матрицы на матрицу.
-                                        {
-                                            MatXMat(matrix1, matrix2);
-                                        }
-                                        break;
-
-                                    case ("4"): // Умножение матрицы на число.
-                                        {
-                                            MatrixMult(matrix1, matrix2);
-                                        }
-                                        break;
-
-                                    case ("5"): // Сравнение элементов матриц.
-                                        {
-                                            MatrixComparasion(matrix1, matrix2);
-                                        }
-                                        break;
-
-                                    case ("6"):
-                                        {
-                                            run = false;
-                                            Console.WriteLine("Вы вышли из раздела.");
-                                            Console.ReadLine();
-                                        }
-                                        break;
-
-                                    default:
-                                        {
-                                            Console.WriteLine("Некорректный ввод. Введите номер функции повторно.");
-                                        }
-                                        break;
-                                }
+                                Console.WriteLine("Матрицу невозможно транспонировать.");
                             }
                         }
                         break;
@@ -320,8 +283,7 @@ namespace ConsoleApp2
                         {
                             int num;
                             bool flag;
-                            string input;
-
+                            string input, str;
                             flag = true;
 
                             while (flag)
@@ -329,7 +291,19 @@ namespace ConsoleApp2
                                 Console.Write("Введите число, которое хотите перевести в двоичную систему счисления: ");
                                 num = Convert.ToInt32(Console.ReadLine());
 
-                                Console.WriteLine("Двоичное представление нового числа: {0}\nДесятичное представление нового числа: {1}", Swap(num), Convert.ToInt32(Swap(num), 2));
+                                int mask1 = (num & 448) >> 6;        
+                                int mask2 = (num & 7) << 6;
+                                num = ((num & ~455) | mask1) | mask2;
+
+                                str = Convert.ToString(num, 2);
+
+                                if (str.Length < 9)
+                                {
+                                    for (int i = str.Length; i < 9; i++)
+                                        str = "0" + str;
+                                }
+
+                                Console.WriteLine("Двоичное представление нового числа: {0}\nДесятичное представление нового числа: {1}", str, num);
                                 Console.WriteLine("Хотите ввести еще одно число? (да/нет)");
                                 input = Console.ReadLine();
 
@@ -344,16 +318,12 @@ namespace ConsoleApp2
 
                     case ("3"):
                         {
-                            Console.WriteLine("Вы вышли из программы");
                             key = false;
+                            Console.WriteLine("Вы вышли из программы");
                             Console.ReadLine();
                         }
                         break;
                 }
-
-
-
-
             }
         }
     }
