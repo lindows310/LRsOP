@@ -13,7 +13,7 @@ namespace ConsoleApp2
          * всех остальных случаях). */
         public static int[,] Turn(int[,] matrix1, int[,] matrix2, int i, int j, int m, int n)
         {
-            if (i - n - j + m == 0) // (альтернативная форма записи: i - j == n - m)
+            if (i == m & j == n & i != j)
             {
                 int[,] matrixTemp = new int[matrix1.GetLength(1), matrix1.GetLength(0)];
 
@@ -26,7 +26,7 @@ namespace ConsoleApp2
                 matrix1 = matrixTemp;
                 return matrix1;
             }
-            else if (i - m - j + n == 0) // (альтернативная форма записи: i - m = j - n)
+            else if (i == m & j == n) // (альтернативная форма записи: i - j = m - n)
                 Console.WriteLine("Количества строк и столбцов матриц совпадают. В развороте нет необходимости.");
             else
                 Console.WriteLine("Разворот матрицы не имеет смысла; к матрице невозможно будет применить бинарные арифметические и логический операторы.");
@@ -67,7 +67,7 @@ namespace ConsoleApp2
                     for (int c = 0; c < matrix2.GetLength(1); c++)
                         result += (matrix1[a, c] * matrix2[c, b]);
 
-                    Console.Write("c({0}{1}) {2} {3}", a, b, result, "\t");
+                    Console.Write("c({0}{1}) {2} {3}", a + 1, b + 1, result, "\t");
                     result = 0;
                 }
                 Console.WriteLine();
@@ -199,23 +199,23 @@ namespace ConsoleApp2
                                     switch (option2)
                                     {
                                         case ("1"): // Сложение.
-                                                MatrixSum(matrix1, matrix2);
+                                            MatrixSum(matrix1, matrix2);
                                             break;
 
                                         case ("2"): // Вычитание.
-                                                MatrixDif(matrix1, matrix2);
+                                            MatrixDif(matrix1, matrix2);
                                             break;
 
                                         case ("3"): // Умножение матрицы на матрицу.
-                                                MatXMat(matrix1, matrix2);
+                                            MatXMat(matrix1, matrix2);
                                             break;
 
                                         case ("4"): // Умножение матрицы на число.
-                                                MatrixMult(matrix1, matrix2);
+                                            MatrixMult(matrix1, matrix2);
                                             break;
 
                                         case ("5"): // Сравнение элементов матриц.
-                                                MatrixComparasion(matrix1, matrix2);
+                                            MatrixComparasion(matrix1, matrix2);
                                             break;
 
                                         case ("6"):
@@ -227,7 +227,7 @@ namespace ConsoleApp2
                                             break;
 
                                         default:
-                                                Console.WriteLine("Некорректный ввод. Введите номер функции повторно.");
+                                            Console.WriteLine("Некорректный ввод. Введите номер функции повторно.");
                                             break;
                                     }
                                 }
@@ -235,8 +235,8 @@ namespace ConsoleApp2
                             else
                             {
                                 Console.WriteLine("Матрицу невозможно транспонировать.");
-                            }    
-                               
+                            }
+
                         }
                         break;
 
@@ -261,7 +261,7 @@ namespace ConsoleApp2
                                 }
                                 Console.WriteLine("Исходное число в десятичной записи: {0}\nИсходное число в двоичной записи: {1}", num, str);
 
-                                int mask1 = (num & 448) >> 6;        
+                                int mask1 = (num & 448) >> 6;
                                 int mask2 = (num & 7) << 6;
                                 num = ((num & ~455) | mask1) | mask2;
 

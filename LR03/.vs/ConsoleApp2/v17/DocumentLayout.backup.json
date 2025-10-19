@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\abros\\OneDrive\\Desktop\\\u043B\u0430\u0431\u044B\\LRsOP\\LR03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F6AB39D-8BA5-4B60-BF13-FB571FC24D27}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\abros\\onedrive\\desktop\\\u043B\u0430\u0431\u044B\\lrsop\\lr03\\consoleapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F6AB39D-8BA5-4B60-BF13-FB571FC24D27}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\abros\\OneDrive\\Desktop\\\u043B\u0430\u0431\u044B\\LRsOP\\LR03\\ConsoleApp2\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\Program.cs",
+              "ToolTip": "C:\\Users\\abros\\OneDrive\\Desktop\\\u043B\u0430\u0431\u044B\\LRsOP\\LR03\\ConsoleApp2\\Program.cs",
+              "RelativeToolTip": "ConsoleApp2\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T22:06:01.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
