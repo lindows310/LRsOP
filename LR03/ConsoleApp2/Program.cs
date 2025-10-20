@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
+
+
     internal class Program
     {
         /* Метод разворота матрицы (разворачивает матрицу в случае, если количество строк одной матрицы равно количеству
@@ -13,7 +15,7 @@ namespace ConsoleApp2
          * всех остальных случаях). */
         public static int[,] Turn(int[,] matrix1, int[,] matrix2, int i, int j, int m, int n)
         {
-            if (i == m & j == n & i != j)
+            if (i == n & j == m & i != j)
             {
                 int[,] matrixTemp = new int[matrix1.GetLength(1), matrix1.GetLength(0)];
 
@@ -21,12 +23,17 @@ namespace ConsoleApp2
                     for (int b = 0; b < matrix1.GetLength(1); b++)
                         matrixTemp[b, a] = matrix1[a, b];
 
-                Console.WriteLine("Матрица была транспонирована.");
-
                 matrix1 = matrixTemp;
-                return matrix1;
+                Console.WriteLine("Матрица была транспонирована.");
+                Console.WriteLine("Транспонированная первая матрица: ");
+                for (int a = 0; a < matrix1.GetLength(0); a++)
+                {
+                    for (int b = 0; b < matrix1.GetLength(1); b++)
+                        Console.Write("(a{0}{1}) {2} \t", a + 1, b + 1, matrixTemp[a, b]);
+                    Console.WriteLine();
+                }
             }
-            else if (i == m & j == n) // (альтернативная форма записи: i - j = m - n)
+            else if (i == n & j == m) // (альтернативная форма записи: i - j = m - n)
                 Console.WriteLine("Количества строк и столбцов матриц совпадают. В развороте нет необходимости.");
             else
                 Console.WriteLine("Разворот матрицы не имеет смысла; к матрице невозможно будет применить бинарные арифметические и логический операторы.");
@@ -60,11 +67,11 @@ namespace ConsoleApp2
         {
             int result = 0;
 
-            for (int a = 0; a < matrix2.GetLength(0); a++)
+            for (int a = 0; a <= matrix1.GetLength(0) - 1; a++)
             {
-                for (int b = 0; b < matrix2.GetLength(1); b++)
+                for (int b = 0; b <= matrix2.GetLength(1) - 1; b++)
                 {
-                    for (int c = 0; c < matrix2.GetLength(1); c++)
+                    for (int c = 0; c <= matrix1.GetLength(1) - 1; c++)
                         result += (matrix1[a, c] * matrix2[c, b]);
 
                     Console.Write("c({0}{1}) {2} {3}", a + 1, b + 1, result, "\t");
@@ -93,7 +100,7 @@ namespace ConsoleApp2
                     if (num == 1)
                         Console.Write("(c{0}{1}) {2} {3}", a + 1, b + 1, matrix1[a, b] * mult, "\t");
                     else if (num == 2)
-                        Console.Write("(c{0}{1}) {2} {3}", a + 1, b + 1, matrix2[a, b] * mult, "\t");
+                        Console.Write("(c{0}{1}) {2} {3}", a + 1, b + 1, matrix2[b, a] * mult, "\t");
                     else
                     {
                         Console.WriteLine("Неверный ввод.");
@@ -141,12 +148,12 @@ namespace ConsoleApp2
                             int i, j, m, n;
                             string inputIJ, inputMN;
 
-                            Console.Write("Введите количество столбцов (i) и количество строк (j) матрицы через пробел: ");
+                            Console.Write("Введите количество строк (i) и количество столбцов (j) матрицы через пробел: ");
                             inputIJ = Console.ReadLine();
                             i = Convert.ToInt32(inputIJ.Split(' ')[0]);
                             j = Convert.ToInt32(inputIJ.Split(' ')[1]);
 
-                            Console.Write("\nВведите количество столбцов (m) и количество строк (n) матрицы через пробел: ");
+                            Console.Write("\nВведите количество строк (m) и количество стобцов (n) матрицы через пробел: ");
                             inputMN = Console.ReadLine();
                             m = Convert.ToInt32(inputMN.Split(' ')[0]);
                             n = Convert.ToInt32(inputMN.Split(' ')[1]);
@@ -154,42 +161,43 @@ namespace ConsoleApp2
                             int[,] matrix1 = new int[i, j];
                             int[,] matrix2 = new int[m, n];
 
-                            for (int a = 0; a < i; a++)
-                                for (int b = 0; b < j; b++)
+                            for (int a = 0; a < matrix1.GetLength(0); a++)
+                                for (int b = 0; b < matrix1.GetLength(1); b++)
                                 {
                                     Console.Write("Введите a{0}{1}: ", a + 1, b + 1);
                                     matrix1[a, b] = Convert.ToInt32(Console.ReadLine());
                                 }
                             Console.WriteLine();
 
-                            for (int a = 0; a < m; a++)
-                                for (int b = 0; b < n; b++)
+                            for (int a = 0; a < matrix1.GetLength(0); a++)
+                                for (int b = 0; b < matrix1.GetLength(1); b++)
                                 {
                                     Console.Write("Введите b{0}{1}: ", a + 1, b + 1);
                                     matrix2[a, b] = Convert.ToInt32(Console.ReadLine());
                                 }
 
+                            Console.WriteLine("Ваша первая матрица: ");
+                            for (int a = 0; a < matrix1.GetLength(0); a++)
+                            {
+                                for (int b = 0; b < matrix1.GetLength(1); b++)
+                                    Console.Write("(a{0}{1}) {2} \t", a + 1, b + 1, matrix1[a, b]);
+                                Console.WriteLine();
+                            }
+
+                            Console.WriteLine("Ваша вторая матрица: ");
+                            for (int a = 0; a < matrix2.GetLength(0); a++)
+                            {
+                                for (int b = 0; b < matrix2.GetLength(1); b++)
+                                    Console.Write("(b{0}{1}) {2} \t", a + 1, b + 1, matrix2[a, b]);
+                                Console.WriteLine();
+                            }
+
+                            int[,] matrixTemp = matrix1;
                             matrix1 = Turn(matrix1, matrix2, i, j, m, n);
                             Console.WriteLine();
 
-                            if (i - m + j - n == 0)
-                            {
-                                Console.WriteLine("Ваша первая матрица: ");
-                                for (int a = 0; a < matrix1.GetLength(0); a++)
-                                {
-                                    for (int b = 0; b < matrix1.GetLength(1); b++)
-                                        Console.Write("(a{0}{1}) {2} \t", a + 1, b + 1, matrix1[a, b]);
-                                    Console.WriteLine();
-                                }
-
-                                Console.WriteLine("Ваша вторая матрица: ");
-                                for (int a = 0; a < matrix2.GetLength(0); a++)
-                                {
-                                    for (int b = 0; b < matrix2.GetLength(1); b++)
-                                        Console.Write("(b{0}{1}) {2} \t", a + 1, b + 1, matrix2[a, b]);
-                                    Console.WriteLine();
-                                }
-
+                            if (i == n & j == m)
+                            {   
                                 while (run == true)
                                 {
                                     Console.WriteLine("\nВыберите опцию: \n(1) Сложение матриц \n(2) Вычитание матриц \n(3) Умножение матриц \n(4) Умножение матрицы на число\n(5) Сравнение элементов матриц \n(6) Выход");
@@ -207,11 +215,11 @@ namespace ConsoleApp2
                                             break;
 
                                         case ("3"): // Умножение матрицы на матрицу.
-                                            MatXMat(matrix1, matrix2);
+                                            MatXMat(matrixTemp, matrix2);
                                             break;
 
                                         case ("4"): // Умножение матрицы на число.
-                                            MatrixMult(matrix1, matrix2);
+                                            MatrixMult(matrixTemp, matrix2);
                                             break;
 
                                         case ("5"): // Сравнение элементов матриц.
@@ -234,9 +242,9 @@ namespace ConsoleApp2
                             }
                             else
                             {
-                                Console.WriteLine("Матрицу невозможно транспонировать.");
+                                Console.WriteLine("Над матрицей невозможно выполнить действия.");
                             }
-
+                        run = true;
                         }
                         break;
 

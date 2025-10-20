@@ -6,3 +6,11 @@ C:\Users\Lidgqqq\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.cspr
 C:\Users\Lidgqqq\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 C:\Users\Lidgqqq\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
 C:\Users\Lidgqqq\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe.config
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.AssemblyReference.cache
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\obj\Debug\ConsoleApp2.exe.config
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Lidgqqq\Desktop\LRs\LRsOP\LR03\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
