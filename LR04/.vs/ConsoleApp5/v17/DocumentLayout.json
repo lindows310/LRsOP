@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04D1C2B5-E0AC-406D-83D9-F205DFFD059D}|ConsoleApp5\\ConsoleApp5.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrsop\\lr04\\consoleapp5\\polynom1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D1C2B5-E0AC-406D-83D9-F205DFFD059D}|ConsoleApp5\\ConsoleApp5.csproj|solutionrelative:consoleapp5\\polynom1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D1C2B5-E0AC-406D-83D9-F205DFFD059D}|ConsoleApp5\\ConsoleApp5.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrsop\\lr04\\consoleapp5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D1C2B5-E0AC-406D-83D9-F205DFFD059D}|ConsoleApp5\\ConsoleApp5.csproj|solutionrelative:consoleapp5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D1C2B5-E0AC-406D-83D9-F205DFFD059D}|ConsoleApp5\\ConsoleApp5.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrsop\\lr04\\consoleapp5\\counter1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D1C2B5-E0AC-406D-83D9-F205DFFD059D}|ConsoleApp5\\ConsoleApp5.csproj|solutionrelative:consoleapp5\\counter1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApp5\\Counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\Counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|solutionrelative:Counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Counter.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Counter.cs",
+              "RelativeDocumentMoniker": "ConsoleApp5\\Counter.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Counter.cs",
+              "RelativeToolTip": "ConsoleApp5\\Counter.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:54:11.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Counter1.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Counter1.cs",
+              "RelativeDocumentMoniker": "ConsoleApp5\\Counter1.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Counter1.cs",
+              "RelativeToolTip": "ConsoleApp5\\Counter1.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwC8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:53:40.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Polynom1.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Polynom1.cs",
+              "RelativeDocumentMoniker": "ConsoleApp5\\Polynom1.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Polynom1.cs",
+              "RelativeToolTip": "ConsoleApp5\\Polynom1.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:51:23.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Counter.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\Counter.cs",
+              "RelativeDocumentMoniker": "Counter.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\Counter.cs",
+              "RelativeToolTip": "Counter.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:38:55.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp5\\Program.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRsOP\\LR04\\ConsoleApp5\\Program.cs",
+              "RelativeToolTip": "ConsoleApp5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:37:16.76Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
