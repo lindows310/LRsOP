@@ -1,0 +1,8 @@
+C:\Users\Lidgqqq\source\repos\LR05\LR05\bin\Debug\LR05.exe.config
+C:\Users\Lidgqqq\source\repos\LR05\LR05\bin\Debug\LR05.exe
+C:\Users\Lidgqqq\source\repos\LR05\LR05\bin\Debug\LR05.pdb
+C:\Users\Lidgqqq\source\repos\LR05\LR05\obj\Debug\LR05.csproj.AssemblyReference.cache
+C:\Users\Lidgqqq\source\repos\LR05\LR05\obj\Debug\LR05.csproj.CoreCompileInputs.cache
+C:\Users\Lidgqqq\source\repos\LR05\LR05\obj\Debug\LR05.exe
+C:\Users\Lidgqqq\source\repos\LR05\LR05\obj\Debug\LR05.pdb
+C:\Users\Lidgqqq\source\repos\LR05\LR05\obj\Debug\LR05.exe.config
