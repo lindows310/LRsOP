@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LR05
 {
-    internal class FractionStatic
+    internal static class FractionStatic
     {
         // Методы, реализующие бинарные операторы (статические методы).
         public static Fraction FracAdd(Fraction frac1, Fraction frac2)

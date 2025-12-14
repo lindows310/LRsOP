@@ -14,13 +14,23 @@ namespace LR05
         public int Denominator
         {
             get { return denominator; }
-            set { denominator = value == 0 ? 1 : value; }
+            set 
+            {
+                if (value == 0)
+                {
+                    denominator = 1;
+                    Console.WriteLine("Попытка присвоения нуля в знаменатель. В знаменатель присвоена единица.");
+                }
+                else
+                    denominator = value;
+            }
         }
         public int Numerator
         {
             get { return numerator; }
             set { numerator = value; }
         }
+
         public Fraction()
         {
             Numerator = 1;
@@ -36,10 +46,12 @@ namespace LR05
         public static Fraction operator +(Fraction frac1, Fraction frac2)
         {
             Fraction fracMin = frac1.Denominator == Math.Min(frac1.Denominator, frac2.Denominator) ? frac1 : frac2;
-            Fraction fracMax = frac1.Denominator == Math.Min(frac1.Denominator, frac2.Denominator) ? frac2 : frac1;
+            Fraction fracMax = frac1.Denominator == Math.Max(frac1.Denominator, frac2.Denominator) ? frac1 : frac2;
 
             if (fracMax.Denominator % fracMin.Denominator == 0)
-                return new Fraction(numerator: (fracMin.Numerator * (fracMax.Denominator / fracMin.Denominator)) + fracMax.Numerator, denominator: fracMax.Denominator);
+                //return new Fraction(frac1.Numerator * frac2.Denominator, frac1.Denominator * frac1.Numerator);
+            
+                             return new Fraction(numerator: (fracMin.Numerator * (fracMax.Denominator / fracMin.Denominator)) + fracMax.Numerator, denominator: fracMax.Denominator); 
             else
             {
                 int newDenom = 1;
@@ -84,29 +96,25 @@ namespace LR05
         // Методы, реализующие бинарные операторы (методы экземпляра).
         public void FracAdd(Fraction frac2)
         {
-            Fraction tempFraction = this;
-            Fraction result = tempFraction + frac2;
+            Fraction result = this + frac2;
             Numerator = result.Numerator;
             Denominator = result.Denominator;
         }
         public void FracSub(Fraction frac2)
         {
-            Fraction tempFraction = this;
-            Fraction result = tempFraction - frac2;
+            Fraction result = this - frac2;
             Numerator = result.Numerator;
             Denominator = result.Denominator;
         }
         public void FracMult(Fraction frac2)
         {
-            Fraction tempFraction = this;
-            Fraction result = tempFraction * frac2;
+            Fraction result = this * frac2;
             Numerator = result.Numerator;
             Denominator = result.Denominator;
         }
         public void FracDiv(Fraction frac2)
         {
-            Fraction tempFraction = this;
-            Fraction result = tempFraction / frac2;
+            Fraction result = this / frac2;
             Numerator = result.Numerator;
             Denominator = result.Denominator;
         }
@@ -130,5 +138,4 @@ namespace LR05
             Console.WriteLine("Дробь равна: {0}/{1}", frac.Numerator, frac.Denominator);
         }
     }
-
 }
