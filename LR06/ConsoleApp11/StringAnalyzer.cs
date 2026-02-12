@@ -13,8 +13,6 @@ namespace ConsoleApp11
     {
         static readonly string numsAlphabet = "0123456789";
         static readonly string alphabet = "йцукенгшщзхъфывапролджэячсмитьбюqwertyuiopasdfghjklzxcvbnm";
-        static readonly string numLet = alphabet + numsAlphabet;
-
         string str;
 
         public int LetCount
@@ -107,6 +105,7 @@ namespace ConsoleApp11
         }
         public bool PalindromCheck()
         {
+            string numLet = alphabet + numsAlphabet;
             string strTemp = Str;
             for (int i = 0; i < strTemp.Length; i++)
                 if (!numLet.Contains(Convert.ToString(strTemp[i])))
