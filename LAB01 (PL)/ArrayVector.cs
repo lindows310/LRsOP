@@ -71,8 +71,8 @@ namespace LAB01
             for (int i = 0; i < cords.Length; i++)
                 average += Math.Abs(cords[i]);
             average = average / cords.Length;
-            for (int i = 0; i < cords.Length + 1; i++)
-                if (i % 2 == 1 && cords[i] < average)
+            for (int i = 1; i < cords.Length + 1; i++)
+                if (i % 2 == 1 && cords[i - 1] < average)
                     sum += cords[i - 1];
             return sum;
         }

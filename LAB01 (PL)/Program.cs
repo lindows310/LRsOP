@@ -183,7 +183,7 @@ namespace LAB01
                                         }
                                         catch (Exception e)
                                         {
-                                            Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 1, ConsoleColor.DarkGray });
+                                            Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 4, ConsoleColor.DarkGray });
                                         }
                                         break;
                                     case ('2'):
@@ -197,7 +197,7 @@ namespace LAB01
                                         }
                                         catch (Exception e)
                                         {
-                                            Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 1, ConsoleColor.DarkGray });
+                                            Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 4, ConsoleColor.DarkGray });
                                         }
                                         break;
                                     case ('3'):
