@@ -1,0 +1,105 @@
+﻿  LAB02.cpp
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(6,5): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(7,13): error C2065: 'ebp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(7,9): error C3192: syntax error: '^' is not a prefix operator (did you mean '*'?)
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(7,18): error C2065: 'ebp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(8,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(8,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(8,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(8,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(9,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(9,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(9,13): error C2146: syntax error: missing ';' before identifier 'ebx'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(9,13): error C2065: 'ebx': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(10,9): error C2146: syntax error: missing ';' before identifier 'cmp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(10,9): error C2065: 'cmp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(10,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(10,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(10,18): error C2065: 'ebx': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(11,9): error C2146: syntax error: missing ';' before identifier 'ja'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(11,9): error C2065: 'ja': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(11,12): error C2146: syntax error: missing ';' before identifier 'a_larger'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(11,12): error C2065: 'a_larger': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(12,9): error C2146: syntax error: missing ';' before identifier 'jl'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(12,9): error C2065: 'jl': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(12,12): error C2146: syntax error: missing ';' before identifier 'a_lesser'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(12,12): error C2065: 'a_lesser': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(14,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(14,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(14,13): error C2146: syntax error: missing ';' before identifier 'result'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(15,9): error C2146: syntax error: missing ';' before identifier 'jmp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(15,9): error C2065: 'jmp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(15,13): error C2146: syntax error: missing ';' before identifier 'exit'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(17,13): error C2146: syntax error: missing ';' before identifier 'a_larger'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(15,13): warning C4551: function call missing argument list
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(18,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(18,13): error C2146: syntax error: missing ';' before identifier 'esi'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(18,13): error C2065: 'esi': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(19,9): error C2146: syntax error: missing ';' before identifier 'mul'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(19,9): error C2065: 'mul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(19,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(19,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(20,9): error C2146: syntax error: missing ';' before identifier 'sub'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(20,9): error C2065: 'sub': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(20,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(20,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(21,9): error C2146: syntax error: missing ';' before identifier 'cdq'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(21,9): error C2065: 'cdq': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(22,9): error C2146: syntax error: missing ';' before identifier 'cmp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(22,9): error C2065: 'cmp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(22,13): error C2146: syntax error: missing ';' before identifier 'esi'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(22,13): error C2065: 'esi': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(23,9): error C2146: syntax error: missing ';' before identifier 'je'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(23,9): error C2065: 'je': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(23,12): error C2146: syntax error: missing ';' before identifier 'div_by_zero'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(23,12): error C2065: 'div_by_zero': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(24,9): error C2146: syntax error: missing ';' before identifier 'idiv'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(24,9): error C2065: 'idiv': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(24,14): error C2146: syntax error: missing ';' before identifier 'esi'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(24,14): error C2065: 'esi': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(25,9): error C2146: syntax error: missing ';' before identifier 'add'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(25,9): error C2065: 'add': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(25,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(25,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(26,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(26,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(26,13): error C2146: syntax error: missing ';' before identifier 'result'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(26,21): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(28,13): error C2146: syntax error: missing ';' before identifier 'a_lesser'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(29,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(29,13): error C2146: syntax error: missing ';' before identifier 'ebp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(29,13): error C2065: 'ebp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(29,18): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(30,9): error C2146: syntax error: missing ';' before identifier 'imul'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(30,9): error C2065: 'imul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(30,14): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(30,14): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(31,9): error C2146: syntax error: missing ';' before identifier 'mul'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(31,9): error C2065: 'mul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(31,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(31,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(32,9): error C2146: syntax error: missing ';' before identifier 'sub'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(32,9): error C2065: 'sub': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(32,13): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(32,13): error C2065: 'eax': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(33,9): error C2146: syntax error: missing ';' before identifier 'add'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(33,9): error C2065: 'add': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(33,13): error C2146: syntax error: missing ';' before identifier 'ebp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(33,13): error C2065: 'ebp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(33,18): error C2065: 'ebx': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(34,9): error C2146: syntax error: missing ';' before identifier 'cmp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(34,9): error C2065: 'cmp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(34,13): error C2146: syntax error: missing ';' before identifier 'ebp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(34,13): error C2065: 'ebp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(35,9): error C2146: syntax error: missing ';' before identifier 'je'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(35,9): error C2065: 'je': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(35,12): error C2146: syntax error: missing ';' before identifier 'div_by_zero'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(35,12): error C2065: 'div_by_zero': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(36,9): error C2146: syntax error: missing ';' before identifier 'idiv'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(36,9): error C2065: 'idiv': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(36,14): error C2146: syntax error: missing ';' before identifier 'ebp'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(36,14): error C2065: 'ebp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(37,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(37,9): error C2065: 'mov': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(37,13): error C2146: syntax error: missing ';' before identifier 'result'
+C:\Users\Lidgqqq\source\repos\LAB02\LAB02.cpp(37,13): error C1003: error count exceeds 100; stopping compilation
