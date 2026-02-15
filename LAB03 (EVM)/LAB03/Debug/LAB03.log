@@ -1,0 +1,4 @@
+﻿  LAB03.cpp
+C:\Users\Lidgqqq\source\repos\LAB03\LAB03.cpp(45,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Lidgqqq\source\repos\LAB03\LAB03.cpp(47,30): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  LAB03.vcxproj -> C:\Users\Lidgqqq\source\repos\LAB03\Debug\LAB03.exe
