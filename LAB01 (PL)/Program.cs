@@ -41,7 +41,7 @@ namespace LAB01
             catch (IndexOutOfRangeException e)
             {
                 len1 = len2 = 2;
-                Utils.ColoredWriteLine("Ошибка. Одному из векторов не была присвоена размерность. Созданы векторы размерности 2.", new object[] { 0, 3, ConsoleColor.Red }, new object[] { 4, 7, ConsoleColor.Yellow });
+                Utils.ColoredWriteLine("Ошибка. Одному (двум) векторам не была присвоена размерность. Созданы векторы размерности 2.", new object[] { 0, 3, ConsoleColor.Red }, new object[] { 4, 7, ConsoleColor.Yellow });
             }
             Console.WriteLine("======================================================================================");
             

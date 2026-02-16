@@ -44,7 +44,7 @@ namespace LAB01
                 }
                 catch (OverflowException e)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Значение, присваиваемое компоненте, не принадлежит области определения типа int. Координате присвоено значение {int.MaxValue}", new object[] { 0, 9, ConsoleColor.Red }, new object[] { 13, 13, ConsoleColor.Yellow });
+                    Utils.ColoredWriteLine($"({i + 1}) Значение, присваиваемое компоненте, не принадлежит области определения типа int. Координате присвоено значение 1", new object[] { 0, 9, ConsoleColor.Red }, new object[] { 13, 13, ConsoleColor.Yellow });
                     cords[i] = 1;
                 }
             }
@@ -94,7 +94,14 @@ namespace LAB01
         }
         public void SortUp()
         {
-            Array.Sort(cords);
+            for (int s = cords.Length / 2; s > 0; s /= 2)
+                for (int i = s; i < cords.Length; i++)
+                    for (int j = i - s; j >= 0 && this[j] > this[j + s]; j -= s)
+                    {
+                        int temp = this[j];
+                        this[j] = this[j + s];
+                        this[j + s] = temp;
+                    }
         }
         public void SortDown()
         {

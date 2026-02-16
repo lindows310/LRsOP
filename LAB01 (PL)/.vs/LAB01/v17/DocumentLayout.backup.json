@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\",
+  "WorkspaceRootPath": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\arrayvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrs\\lab01 (pl)\\arrayvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:arrayvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\source\\repos\\lab01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\vectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:vectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\vectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:vectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Utils.cs",
-              "DocumentMoniker": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\Utils.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\Utils.cs",
               "RelativeDocumentMoniker": "Utils.cs",
-              "ToolTip": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\Utils.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\Utils.cs",
               "RelativeToolTip": "Utils.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAqwCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -43,11 +43,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Vectors.cs",
-              "DocumentMoniker": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\Vectors.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\Vectors.cs",
               "RelativeDocumentMoniker": "Vectors.cs",
-              "ToolTip": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\Vectors.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\Vectors.cs",
               "RelativeToolTip": "Vectors.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowBYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -58,11 +58,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ArrayVector.cs",
-              "DocumentMoniker": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\ArrayVector.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\ArrayVector.cs",
               "RelativeDocumentMoniker": "ArrayVector.cs",
-              "ToolTip": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\ArrayVector.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\ArrayVector.cs",
               "RelativeToolTip": "ArrayVector.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAmwE8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwGQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T12:51:59.043Z",
               "EditorCaption": ""
@@ -71,11 +71,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lidgqqq\\source\\repos\\LAB01\\Program.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\LAB01 (PL)\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAwwJgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAowIsAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T12:51:26.676Z",
               "EditorCaption": ""
