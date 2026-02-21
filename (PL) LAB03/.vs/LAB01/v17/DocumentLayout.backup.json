@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrs\\(pl) lab03\\linkedlistvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:linkedlistvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrs\\(pl) lab03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrs\\(pl) lab03\\arrayvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:arrayvector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrs\\(pl) lab03\\vectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:vectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|c:\\users\\lidgqqq\\desktop\\lrs\\lrs\\(pl) lab03\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5987D16C-33A1-4098-9155-CE961D6EE013}|LAB01.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAD4vxYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T04:29:15.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vectors.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\Vectors.cs",
+              "RelativeDocumentMoniker": "Vectors.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\Vectors.cs",
+              "RelativeToolTip": "Vectors.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T04:29:06.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LinkedListVector.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\LinkedListVector.cs",
+              "RelativeDocumentMoniker": "LinkedListVector.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\LinkedListVector.cs",
+              "RelativeToolTip": "LinkedListVector.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAArwFoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T04:20:36.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArrayVector.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\ArrayVector.cs",
+              "RelativeDocumentMoniker": "ArrayVector.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\ArrayVector.cs",
+              "RelativeToolTip": "ArrayVector.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAtwKcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T04:13:44.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\Utils.cs",
+              "RelativeDocumentMoniker": "Utils.cs",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(PL) LAB03\\Utils.cs",
+              "RelativeToolTip": "Utils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T04:10:33.651Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

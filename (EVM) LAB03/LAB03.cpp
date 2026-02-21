@@ -17,7 +17,7 @@ int sum_asm(std::vector<int> arr, int lim)
         xor eax, eax
         xor esi, esi               // буфер элементов массива
         xor edi, edi               // регистр, содержащий счетчик
-        mov ebx, vecdata               // EBX содержит ссылку на arr{}
+        mov ebx, vecdata           // EBX содержит ссылку на arr{}
         mov ecx, arr_size          // ECX содержит размер массива arr{}
         jcxz exit_1                // ECX (arr_size) = 0 - выходим из программы
 

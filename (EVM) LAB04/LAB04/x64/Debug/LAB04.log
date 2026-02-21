@@ -1,0 +1,104 @@
+﻿  LAB04.cpp
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(8,5): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(10,9): error C2065: 'finit': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(11,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(11,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(11,13): error C2146: syntax error: missing ';' before identifier 'qword'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(11,13): error C2065: 'qword': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(11,19): error C2146: syntax error: missing ';' before identifier 'ptr'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(11,19): error C2065: 'ptr': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(12,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(12,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(12,13): error C2146: syntax error: missing ';' before identifier 'qword'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(12,13): error C2065: 'qword': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(12,19): error C2146: syntax error: missing ';' before identifier 'ptr'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(12,19): error C2065: 'ptr': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(13,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(13,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(13,13): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(13,13): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(14,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(14,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(14,13): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(14,13): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(15,9): error C2146: syntax error: missing ';' before identifier 'fsincos'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(15,9): error C2065: 'fsincos': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(16,9): error C2146: syntax error: missing ';' before identifier 'fcom'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(16,9): error C2065: 'fcom': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(16,14): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(17,9): error C2146: syntax error: missing ';' before identifier 'je'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(17,9): error C2065: 'je': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(17,12): error C2146: syntax error: missing ';' before identifier 'error_exit'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(17,12): error C2065: 'error_exit': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(18,9): error C2146: syntax error: missing ';' before identifier 'fdiv'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(18,9): error C2065: 'fdiv': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(19,9): error C2146: syntax error: missing ';' before identifier 'fld1'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(19,9): error C2065: 'fld1': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(20,9): error C2146: syntax error: missing ';' before identifier 'fdiv'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(20,9): error C2065: 'fdiv': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(21,9): error C2146: syntax error: missing ';' before identifier 'fcom'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(21,9): error C2065: 'fcom': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(21,14): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(22,9): error C2146: syntax error: missing ';' before identifier 'je'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(22,9): error C2065: 'je': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(22,12): error C2146: syntax error: missing ';' before identifier 'error_exit'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(22,12): error C2065: 'error_exit': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(23,9): error C2146: syntax error: missing ';' before identifier 'faddp'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(23,9): error C2065: 'faddp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(23,15): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(23,15): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(23,22): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(24,9): error C2146: syntax error: missing ';' before identifier 'fxch'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(24,9): error C2065: 'fxch': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(24,14): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(24,14): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(25,9): error C2146: syntax error: missing ';' before identifier 'fcos'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(25,9): error C2065: 'fcos': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(26,9): error C2146: syntax error: missing ';' before identifier 'faddp'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(26,9): error C2065: 'faddp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(26,15): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(26,15): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(26,22): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(27,9): error C2146: syntax error: missing ';' before identifier 'faddp'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(27,9): error C2065: 'faddp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(27,15): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(27,15): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(27,22): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(28,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(28,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(28,13): error C2146: syntax error: missing ';' before identifier 'qword'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(28,13): error C2065: 'qword': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(28,19): error C2146: syntax error: missing ';' before identifier 'ptr'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(28,19): error C2065: 'ptr': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(29,9): error C2146: syntax error: missing ';' before identifier 'fmul'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(29,9): error C2065: 'fmul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(29,14): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(29,14): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(30,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(30,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(30,13): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(30,13): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(31,9): error C2146: syntax error: missing ';' before identifier 'fsubp'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(31,9): error C2065: 'fsubp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(31,15): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(31,15): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(31,22): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(32,9): error C2146: syntax error: missing ';' before identifier 'fmul'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(32,9): error C2065: 'fmul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(32,14): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(32,14): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(33,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(33,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(33,13): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(33,13): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(34,9): error C2146: syntax error: missing ';' before identifier 'fmul'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(34,9): error C2065: 'fmul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(34,14): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(34,14): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(35,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(35,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(35,13): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(35,13): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(36,9): error C2146: syntax error: missing ';' before identifier 'faddp'
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(36,9): error C2065: 'faddp': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(36,9): error C1003: error count exceeds 100; stopping compilation

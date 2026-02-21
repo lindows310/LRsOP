@@ -1,0 +1,4 @@
+﻿  LAB04.cpp
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(73,97): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Lidgqqq\source\repos\LAB04\LAB04.cpp(73,94): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  LAB04.vcxproj -> C:\Users\Lidgqqq\source\repos\LAB04\Debug\LAB04.exe
