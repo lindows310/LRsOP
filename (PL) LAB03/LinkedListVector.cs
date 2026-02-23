@@ -41,6 +41,7 @@ namespace LAB01
                 currentNode.nextNode = new Node(0);
                 currentNode = currentNode.nextNode;
             }
+            Length += 5;
         }
         public LinkedListVector(int length)
         {
@@ -50,6 +51,7 @@ namespace LAB01
                 currentNode.nextNode = 0;
                 currentNode = currentNode.nextNode;
             }
+            Length += length;
         }
         public Node this[int index]
         {
@@ -59,7 +61,7 @@ namespace LAB01
                 for (int i = 0; i < index; i++)
                     currentNode = currentNode.nextNode;
                 if (currentNode == null)
-                    throw new Exception("Ошибка. Не существует элемента, соответствующего данному индексу.");
+                    throw new Exception("Не существует элемента, соответствующего данному индексу.");
                 return currentNode;
             }
             set
@@ -67,27 +69,15 @@ namespace LAB01
                 Node currentNode = firstNode;
                 for (int i = 0; i < index; i++)
                     currentNode = currentNode.nextNode;
-                if (currentNode.nextNode == null)
+                if (currentNode == null)
                     throw new Exception("Ошибка. Не существует элемента, соответствующего данному индексу.");
-                currentNode.nextNode = value;
+                currentNode.value = value.value;
             }
         }
 
-        public int Length
-        {
-            get
-            {
-                Node currentNode = firstNode;
-                for (int i = 1; ; i++)
-                {
-                    currentNode = currentNode.nextNode;
-                    if (currentNode.nextNode == null)
-                        return i;
-                }
-            }
-        }
+        public int Length { get; private set; }
 
-        public void FillVal()
+        public void FillVal()   
         {
             string[] temp = Console.ReadLine().Split(' ');
             for (int i = 0; i < Length; i++)
@@ -98,17 +88,17 @@ namespace LAB01
                 }
                 catch (FormatException)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Неправильный формат ввода. В координату записано значение 0.", new object[] { 0, 3, ConsoleColor.Red }, new object[] { 4, 8, ConsoleColor.DarkGray });
+                    Utils.ColoredWriteLine($"|RED| ({i + 1}) Неправильный формат ввода. |DARKGRAY| В координату записано значение 0.");
                     this[i] = 0;
                 }
                 catch (IndexOutOfRangeException)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Компоненте не было происвоено значение. {i + 1}-ая координата равна 0.", new object[] { 0, 5, ConsoleColor.Red }, new object[] { 6, 9, ConsoleColor.DarkGray });
+                    Utils.ColoredWriteLine($"|RED| ({i + 1}) Компоненте не было происвоено значение. |DARKGRAY| {i + 1}-ая координата равна 0.");
                     this[i] = 0;
                 }
                 catch (OverflowException)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Значение, присваиваемое компоненте, не принадлежит области определения типа int. Координате присвоено значение 1", new object[] { 0, 9, ConsoleColor.Red }, new object[] { 10, 13, ConsoleColor.DarkGray });
+                    Utils.ColoredWriteLine($"|RED| ({i + 1}) Значение, присваиваемое компоненте, не принадлежит области определения типа int. |DARKGRAY| Координате присвоено значение 1");
                     this[i] = 1;
                 }
             }
@@ -124,12 +114,16 @@ namespace LAB01
         public void AddToEnd(int value)
         {
             Node nextNode = new Node(value);
-            this[Length].nextNode = nextNode;
+            this[Length - 1].nextNode = nextNode;
+
+            Length++;
         }
         public void AddToStart(int value)
         {
-            Node newStartNode = new Node(value, firstNode);
-            firstNode = newStartNode;
+            Node prevFirstNode = firstNode;
+            firstNode = new Node(value, prevFirstNode);
+
+            Length++;
         }
         public void AddInBetween(int value, int index)
         {
@@ -147,6 +141,7 @@ namespace LAB01
                 }
                 else
                     AddToEnd(value);
+                Length++;
             }
             else
                 throw new Exception("Не существует элемента, соответствующего индексу.");
@@ -154,9 +149,9 @@ namespace LAB01
         public override string ToString()
         {
             string vector = " ";
-            for (int i = 0; i <= Length; i++)
+            for (int i = 0; i < Length; i++)
                 vector += this[i].value + " ";
-            return $"Кол-во коорд.: [{Length}]; " + "(" + vector + ")";
+            return $"Кол-во коорд.: [{Length + 1}]; " + "(" + vector + ")";
         }
     }
 }

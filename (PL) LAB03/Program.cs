@@ -14,9 +14,9 @@ namespace LAB01
     {
         public static void PrintTitle()
         {
-            Utils.ColoredWrite("Лабораторная работа No1. Язык программирования C#: " +
-                              "Повторение. Исключительные ситуации. \nВыполнил студент группы 6101-020302 " +
-                              "Абросимов Артём.\n", new object[] { 0, 8, ConsoleColor.Yellow }, new object[] { 13, 14, ConsoleColor.Yellow });
+            Utils.ColoredWrite("|YELLOW| Лабораторная работа No1. Язык программирования C#: " +
+                              "Повторение. Исключительные ситуации. |GRAY| \nВыполнил студент группы 6101-020302 " +
+                              "|YELLOW| Абросимов Артём.\n");
             Console.WriteLine("======================================================================================");
         }
         static void Main()
@@ -24,7 +24,7 @@ namespace LAB01
             int len1, len2, len3; bool run = true;
             Program.PrintTitle();
 
-            Utils.ColoredWrite("Введите размерности векторов и односвязного списка (через пробел): ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 6, 7, ConsoleColor.Red });
+            Utils.ColoredWrite("Введите |YELLOW| размерности векторов |GRAY| и |YELLOW| односвязного списка |RED| (через пробел): ");
             string input = Console.ReadLine();
             try
             {
@@ -35,17 +35,17 @@ namespace LAB01
             catch (FormatException)
             {
                 len1 = len2 = len3 = 2;
-                Utils.ColoredWriteLine("Ошибка. Неправильный формат ввода. Созданы векторы размерности 2.", new object[] { 0, 3, ConsoleColor.Red }, new object[] { 4, 7, ConsoleColor.DarkGray });
+                Utils.ColoredWriteLine("|RED| Ошибка. Неправильный формат ввода. |DARKGRAY| Созданы векторы размерности 2.");
             }
             catch (IndexOutOfRangeException)
             {
                 len1 = len2 = len3 = 2;
-                Utils.ColoredWriteLine("Ошибка. Вектору (векторам) не была присвоена размерность. Созданы векторы размерности 2.", new object[] { 0, 6, ConsoleColor.Red }, new object[] { 7, 9, ConsoleColor.DarkGray });
+                Utils.ColoredWriteLine("|RED| Ошибка. Вектору (векторам) не была присвоена размерность. |DARKGRAY| Созданы векторы размерности 2.");
             }
             catch (OverflowException)
             {
                 len1 = len2 = len3 = 2;
-                Utils.ColoredWriteLine("Ошибка. Размерностью вектора (векторов) было задано отрицательное число. Созданы векторы размерностью 2.", new object[] { 0, 6, ConsoleColor.Red }, new object[] { 7, 10, ConsoleColor.DarkGray });
+                Utils.ColoredWriteLine("|RED| Ошибка. Размерностью вектора (векторов) было задано отрицательное число. |DARKGRAY| Созданы векторы размерностью 2.");
             }
             Console.WriteLine("======================================================================================");
 
@@ -63,7 +63,7 @@ namespace LAB01
 
             ArrayVector[] vectors = new ArrayVector[] { vec1, vec2 };
 
-            Utils.ColoredWrite("Нажмите любую клавишу, чтобы продолжить...", new object[] { 0, 2, ConsoleColor.Yellow }, new object[] { 3, 4, ConsoleColor.Yellow });
+            Utils.ColoredWrite("|YELLOW| Нажмите любую клавишу, чтобы продолжить...");
             Console.ReadKey();
 
             Console.Clear();
@@ -72,7 +72,7 @@ namespace LAB01
             {
                 Console.Clear();
                 Program.PrintTitle();
-                Utils.ColoredWriteLine("Выберите раздел: \n[1] Действия над векторами \n[2] Операции над векторами \n[3] Односвязный список\n[любой другой символ] выход из программы", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                Utils.ColoredWriteLine("|YELLOW| Выберите раздел: |GRAY| \n[1] Действия над векторами \n[2] Операции над векторами \n[3] Односвязный список\n[любой другой символ] выход из программы");
                 char optionCat = Console.ReadKey().KeyChar;
                 switch (optionCat)
                 {
@@ -88,7 +88,7 @@ namespace LAB01
                                                  "\n[5] Сумма компонент вектора с нечетными номерами \n[6] Подсчет произведения четных положительных компонент" +
                                                  "\n[7] Подсчет произведения всех нечетных элементов \n[8] Сортировка массива по возрастанию \n[9] Сортировка массива по убыванию \n[Любой другой символ] Выход из программы");
 
-                            Utils.ColoredWrite("\nВведите опцию: ", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                            Utils.ColoredWrite("|YELLOW| \nВведите опцию: ");
                             char option1 = Console.ReadKey().KeyChar;
                             Console.Clear();
 
@@ -100,60 +100,60 @@ namespace LAB01
                                 switch (option1)
                                 {
                                     case ('1'):
-                                        Utils.ColoredWrite("Введите номер вектора, информацию о котором вы хотите получить: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| информацию о котором вы хотите получить: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine($"Вектор равен: {vectors[selectNum - 1].ToString()}");
                                         break;
 
                                     case ('2'):
-                                        Utils.ColoredWrite("Введите номер вектора, который вы хотите изменить, желаемую координату и новое значение (в указанном порядке): ", new object[] { 1, 2, ConsoleColor.Yellow }, new object[] { 7, 8, ConsoleColor.Yellow }, new object[] { 10, 11, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| который вы хотите изменить, |YELLOW| желаемую координату |GRAY| и |YELLOW| новое значение (в указанном порядке): ");
                                         string[] values = Console.ReadLine().Split(' ');
                                         vectors[Convert.ToInt32(values[0]) - 1][Convert.ToInt32(values[1]) - 1] = Convert.ToInt32(values[2]);
                                         Console.WriteLine($"{values[1]}-ая координата {values[0]}-го вектора теперь равна {values[2]}");
                                         break;
 
                                     case ('3'):
-                                        Utils.ColoredWrite("Введите номер вектора, норму которого вы хотите посчитать: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| норму которого вы хотите посчитать: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine($"Норма вектора {selectNum} равна {vectors[selectNum - 1].GetNorm()}");
                                         break;
 
                                     case ('4'):
-                                        Utils.ColoredWrite("Введите номер вектора, к которому вы хотите применить операцию: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| к которому вы хотите применить операцию: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine($"Сумма положительных компонент вектора {selectNum} с четными номерами равна: {vectors[selectNum - 1].SumPositivesFromChetIndex()}");
                                         break;
 
                                     case ('5'):
-                                        Utils.ColoredWrite("Введите номер вектора, к которому вы хотите применить операцию: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| к которому вы хотите применить операцию: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine($"Сумма компонент вектора {selectNum} с нечетными номерами равна: {vectors[selectNum - 1].SumLessFromNechetIndex()}");
                                         break;
 
                                     case ('6'):
-                                        Utils.ColoredWrite("Введите номер вектора, к которому вы хотите применить операцию: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| к которому вы хотите применить операцию: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine($"Произведение четных положительных компонент вектора {selectNum} равна: {vectors[selectNum - 1].MultChet()}");
                                         break;
 
                                     case ('7'):
-                                        Utils.ColoredWrite("Введите номер вектора, к которому вы хотите применить операцию: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| к которому вы хотите применить операцию: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine($"Произведение нечетных компонент вектора {selectNum} равна: {vectors[selectNum - 1].MultNechet()}");
                                         break;
 
                                     case ('8'):
-                                        Utils.ColoredWrite("Введите номер вектора, который вы хотите отсортировать (по возрастанию): ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| к которому вы хотите применить операцию: ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         vectors[selectNum - 1].SortUp();
-                                        Utils.ColoredWriteLine($"Сортировка вектора {selectNum} по возрастанию проведена успешно.", new object[] { 0, 2, ConsoleColor.Yellow }, new object[] { 3, 4, ConsoleColor.Yellow });
+                                        Utils.ColoredWriteLine($"|YELLOW| Сортировка вектора {selectNum} по возрастанию |GRAY| проведена успешно.");
                                         break;
 
                                     case ('9'):
-                                        Utils.ColoredWrite("Введите номер вектора, который вы хотите отсортировать (по убыванию): ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| номер вектора, |GRAY| который вы хотите отсортировать (по убыванию): ");
                                         selectNum = Convert.ToInt32(Console.ReadLine());
                                         vectors[selectNum - 1].SortDown();
-                                        Utils.ColoredWriteLine($"Сортировка вектора {selectNum} по убыванию проведена успешно.", new object[] { 0, 2, ConsoleColor.Yellow }, new object[] { 3, 4, ConsoleColor.Yellow });
+                                        Utils.ColoredWriteLine($"|YELLOW| Сортировка вектора {selectNum} по убыванию |GRAY| проведена успешно.");
                                         break;
 
                                     default:
@@ -163,9 +163,9 @@ namespace LAB01
                             }
                             catch (Exception e)
                             {
-                                Utils.ColoredWriteLine($"Произошла ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 1, ConsoleColor.Red });
+                                Utils.ColoredWriteLine($"|RED| Произошла ошибка. |GRAY| {e.Message}");
                             }
-                            Utils.ColoredWriteLine("\nЧтобы продолжить, нажмите любую клавишу...", new object[] { 0, 2, ConsoleColor.Yellow }, new object[] { 3, 4, ConsoleColor.Yellow });
+                            Utils.ColoredWriteLine("|YELLOW| \nЧтобы продолжить, нажмите любую клавишу...");
                             Console.ReadKey();
                         }
                         break;
@@ -179,9 +179,9 @@ namespace LAB01
 
                             Console.WriteLine("[1] Сложение векторов \n[2] Скалярное произведение векторов" +
                                             "\n[3] Умножение вектора на число \n[4] Посчитать норму вектора " +
-                                            "\n[5] Сложение векторов разных типов [любой другой символ] Выйти из раздела");
+                                            "\n[5] Сложение векторов разных типов \n[любой другой символ] Выйти из раздела");
 
-                            Utils.ColoredWrite("\nВведите опцию: ", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                            Utils.ColoredWrite(" |YELLOW| \nВведите опцию: ");
                             char option2 = Console.ReadKey().KeyChar;
                             Console.Clear();
 
@@ -195,11 +195,11 @@ namespace LAB01
                                         try
                                         {
                                             ArrayVector result1 = Vectors.SumSt(vec1, vec2);
-                                            Utils.ColoredWriteLine($"Сложение векторов произведено успешно. Результат сложения: {result1.ToString()}", new object[] { 0, 1, ConsoleColor.Yellow }, new object[] { 3, 3, ConsoleColor.Yellow });
+                                            Utils.ColoredWriteLine($"|YELLOW| Сложение векторов |GRAY| произведено |YELLOW| успешно. |GRAY| Результат сложения: {result1.ToString()}");
                                         }
                                         catch (Exception e)
                                         {
-                                            Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 4, ConsoleColor.DarkGray });
+                                            Utils.ColoredWriteLine($" |RED| Ошибка. |DARKGRAY| {e.Message}");
                                         }
                                         break;
 
@@ -207,11 +207,11 @@ namespace LAB01
                                         try
                                         {
                                             int result2 = Vectors.ScalarSt(vec1, vec2);
-                                            Utils.ColoredWriteLine($"Скалярное произведение векторов произведено успешно. Результат операции: {result2}", new object[] { 0, 1, ConsoleColor.Yellow }, new object[] { 4, 4, ConsoleColor.Yellow });
+                                            Utils.ColoredWriteLine($"|YELLOW| Скалярное произведение векторов |GRAY| произведено |YELLOW| успешно. Результат операции: {result2}");
                                         }
                                         catch (Exception e)
                                         {
-                                            Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 4, ConsoleColor.DarkGray });
+                                            Utils.ColoredWriteLine($" |RED| Ошибка. |DARKGRAY| {e.Message}");
                                         }
                                         break;
 
@@ -242,17 +242,17 @@ namespace LAB01
                             }
                             catch (FormatException)
                             {
-                                Utils.ColoredWriteLine($"Ошибка. Неверный формат ввода.", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 3, ConsoleColor.DarkGray });
+                                Utils.ColoredWriteLine("|RED| Ошибка. |DARKGRAY| Неверный формат ввода.");
                             }
                             catch (IndexOutOfRangeException)
                             {
-                                Utils.ColoredWriteLine($"Ошибка. Вектора с заданным номером не существует", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 6, ConsoleColor.DarkGray });
+                                Utils.ColoredWriteLine("|RED| Ошибка. |DARKGRAY| Вектора с заданным номером не существует");
                             }
                             catch (Exception e)
                             {
-                                Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 4, ConsoleColor.DarkGray });
+                                Utils.ColoredWriteLine($"|RED| Ошибка. |DARKGRAY| {e.Message}");
                             }
-                            Utils.ColoredWriteLine("\nЧтобы продолжить, нажмите любую клавишу...", new object[] { 0, 2, ConsoleColor.Yellow }, new object[] { 3, 4, ConsoleColor.Yellow });
+                            Utils.ColoredWriteLine("|YELLOW| \nЧтобы продолжить, нажмите любую клавишу...");
                             Console.ReadKey();
                         }
                         break;
@@ -267,7 +267,7 @@ namespace LAB01
                             Console.WriteLine("[1] Отобразить информацию об односвязном списке\n[2] Создать односвязный список\n[3] Добавить элемент в начало списка" +
                                             "\n[4] Добавить элемент в конец списка\n[5] Добавить элемент вовнутрь списка\n[6] Вычислить норму вектора\n[Любой другой символ] Выйти из раздела");
 
-                            Utils.ColoredWrite("\nВведите опцию: ", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                            Utils.ColoredWrite("|YELLOW| \nВведите опцию: ");
                             char option3 = Console.ReadKey().KeyChar;
                             Console.Clear();
 
@@ -281,28 +281,28 @@ namespace LAB01
                                         Console.WriteLine($"Вектор равен: {linkedListVec.ToString()}");
                                         break;
                                     case ('2'):
-                                        Utils.ColoredWrite("Введите количество координат вектора: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| количество координат |GRAY| вектора: ");
                                         linkedListVec = new LinkedListVector(int.Parse(Console.ReadLine()));
-                                        Utils.ColoredWrite($"Инициализирован вектор: {linkedListVec.ToString()}", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite($"|YELLOW| Инициализирован вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
                                     case ('3'):
-                                        Utils.ColoredWrite("Введите значение узла, который вы хотите добавить в начало списка: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| значение узла, |GRAY| который вы хотите добавить в начало списка: ");
                                         linkedListVec.AddToStart(int.Parse(Console.ReadLine()));
-                                        Utils.ColoredWrite($"Измененный вектор: {linkedListVec.ToString()}", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
                                     case ('4'):
-                                        Utils.ColoredWrite("Введите значение узла, который вы хотите добавить в конец списка: ", new object[] { 1, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| значение узла, |GRAY| который вы хотите добавить в конец списка: ");
                                         linkedListVec.AddToEnd(int.Parse(Console.ReadLine()));
-                                        Utils.ColoredWrite($"Измененный вектор: {linkedListVec.ToString()}", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
                                     case ('5'):
-                                        Utils.ColoredWrite("Введите значение узла и индекс, по которому вы хотите добавить элемент: ", new object[] { 1, 2, ConsoleColor.Yellow }, new object[] { 4, 4, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite("Введите |YELLOW| значение узла |GRAY| и |YELLOW| индекс, |GRAY| по которому вы хотите добавить элемент: ");
                                         string[] input5 = Console.ReadLine().Split(' ');
                                         linkedListVec.AddInBetween(Convert.ToInt32(input5[0]), Convert.ToInt32(input5[1]));
-                                        Utils.ColoredWrite($"Измененный вектор: {linkedListVec.ToString()}", new object[] { 0, 0, ConsoleColor.Yellow }, new object[] { 1, 1, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
                                     case ('6'):
-                                        Utils.ColoredWrite($"Норма вектора равна: {linkedListVec.GetNorm()}", new object[] { 0, 1, ConsoleColor.Yellow }, new object[] { 2, 2, ConsoleColor.Yellow });
+                                        Utils.ColoredWrite($"|YELLOW| Норма вектора |GRAY| равна: {linkedListVec.GetNorm()}");
                                         break;
                                     default:
                                         flag3 = false;
@@ -311,23 +311,23 @@ namespace LAB01
                             }
                             catch (FormatException)
                             {
-                                Utils.ColoredWriteLine($"Неправильный формат ввода. Повторите ввод.", new object[] { 0, 2, ConsoleColor.Red }, new object[] { 3, 5, ConsoleColor.DarkGray });
+                                Utils.ColoredWriteLine("|RED| Неправильный формат ввода. |DARKGRAY| Повторите ввод.");
                             }
                             catch (IndexOutOfRangeException)
                             {
-                                Utils.ColoredWriteLine($"Ошибка. Вектора с заданным номером не существует", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 6, ConsoleColor.DarkGray });
+                                Utils.ColoredWriteLine("|RED| Ошибка. |DARKGRAY| Вектора с заданным номером не существует");
                             }
                             catch (Exception e)
                             {
-                                Utils.ColoredWriteLine($"Ошибка. {e.Message}", new object[] { 0, 0, ConsoleColor.Red }, new object[] { 1, 4, ConsoleColor.DarkGray });
+                                Utils.ColoredWriteLine($"|RED| Ошибка. |GRAY| {e.Message}");
                             }
-                            Utils.ColoredWriteLine("\nЧтобы продолжить, нажмите любую клавишу...", new object[] { 0, 2, ConsoleColor.Yellow }, new object[] { 3, 4, ConsoleColor.Yellow });
+                            Utils.ColoredWriteLine("|YELLOW| \nЧтобы продолжить, нажмите любую клавишу...");
                             Console.ReadKey();
                         }
                         break;
 
                     default:
-                        Utils.ColoredWriteLine($"\nВыход из программы...", new object[] { 0, 1, ConsoleColor.Red }, new object[] { 2, 2, ConsoleColor.Red });
+                        Utils.ColoredWriteLine("|RED| \nВыход из программы...");
                         run = false;
                         break;
                 }

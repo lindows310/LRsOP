@@ -13,6 +13,7 @@ int calc_asm(int a, int b, int c, int d)
         cmp d, 0;        проверка деления на ноль
         je error_exit
         mov esi, d
+
         imul ebx, ebx    // EBX = b * b
         shl ebx, 3       // EBX = 8 * b * b
         imul eax, 7      // EAX = 7 * a
