@@ -1,0 +1,29 @@
+﻿  LAB05.cpp
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(6,5): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(8,9): error C2065: 'finit': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(9,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(9,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(9,13): error C2146: syntax error: missing ';' before identifier 'y'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(10,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(10,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(10,13): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(11,9): error C2146: syntax error: missing ';' before identifier 'fmul'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(11,9): error C2065: 'fmul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(12,9): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(12,9): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(12,13): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(13,9): error C2146: syntax error: missing ';' before identifier 'fdivpr'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(13,9): error C2065: 'fdivpr': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(14,9): error C2146: syntax error: missing ';' before identifier 'fsin'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(14,9): error C2065: 'fsin': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(15,9): error C2146: syntax error: missing ';' before identifier 'fldl2e'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(15,9): error C2065: 'fldl2e': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(16,9): error C2146: syntax error: missing ';' before identifier 'fmul'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(16,9): error C2065: 'fmul': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(17,9): error C2146: syntax error: missing ';' before identifier 'f2xm1'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(17,9): error C2065: 'f2xm1': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(18,9): error C2146: syntax error: missing ';' before identifier 'fld1'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(18,9): error C2065: 'fld1': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(19,9): error C2146: syntax error: missing ';' before identifier 'fadd'
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(19,9): error C2065: 'fadd': undeclared identifier
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(22,5): error C2143: syntax error: missing ';' before '}'

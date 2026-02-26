@@ -1,0 +1,4 @@
+﻿  LAB05.cpp
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(188,22): warning C4101: 'y': unreferenced local variable
+C:\Users\Lidgqqq\source\repos\LAB05\LAB05.cpp(188,12): warning C4101: 'x': unreferenced local variable
+  LAB05.vcxproj -> C:\Users\Lidgqqq\source\repos\LAB05\Debug\LAB05.exe
