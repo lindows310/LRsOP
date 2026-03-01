@@ -1,51 +1,52 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
-#include <vector>
-#include <sstream>
 
-int sum_asm(std::vector<int> arr, int lim)
+int sum_asm(int* arr, int lim, int arr_length)
 {
-    int sum_result;
-    if (arr.size() == 0)
+    if (arr_length <= 0)
         return 0;
-    int arr_size = arr.size() - 1;
 
-    int* vecdata = &arr[0];
-                                   // Задание: 1)	В одномерном массиве A={a[i]} целых чисел вычислить сумму кубов всех положительных элементов массива, удовлетворяющих условию: a[i] >=b.
+    int sum_result = 0;
+
     __asm {
-        xor eax, eax
-        xor esi, esi               // буфер элементов массива
-        xor edi, edi               // регистр, содержащий счетчик
-        mov ebx, vecdata           // EBX содержит ссылку на arr{}
-        mov ecx, arr_size          // ECX содержит размер массива arr{}
-        jcxz exit_1                // ECX (arr_size) = 0 - выходим из программы
+        xor eax, eax             // EAX очищен (сумма)
+        xor edi, edi             // EDI очищен (счетчик)
+        mov ebx, arr             // в EBX - ссылка на arr
+        mov ecx, arr_length      // в ECX - длина arr
 
         begin_loop:
-        mov esi, [ebx + 4*edi]
-        cmp esi, lim               // arr[EDI] ? lim
-        jb end_loop                // Переход осуществляется, если ESI (arr[EDI]) меньше lim
-        imul esi, esi              // ESI = (arr[EDI])^2
-        add eax, esi               // EAX = EAX + (arr[EDI])^2
-        cmp ecx, edi               // arr_size ? 4*EDI
-        jna exit_1                 // В случае, если сдвиг адреса начала массива (EDX) больше размера массива (ECX) - выходим из программы
+        cmp edi, ecx             // EDI == ECX - переход (счетчик равен длине массива)
+        je end_loop              // Переход в конец цикла
+        mov esi, [ebx + edi * 4] // В ESI - arr[EDI] - элемент массива
+        cmp esi, 0               // В ESI - ноль, сумма не меняется, переход в следующий цикл (число отрицательное - не выполнено условие)
+        jle next_element         // Следующая итерация
+        cmp esi, lim             // ESI < lim => не выполняется условие, переход в следующей итерации
+        jl next_element          // Следующая итерация
+        mov edx, esi             // В EDX - ESI (arr[EDI])
+        imul esi, esi            // В ESI - (arr[EDI])^2
+        imul esi, edx            // В ESI - (arr[EDI])^3
+        add eax, esi             // В EAX - сумма элементов
 
-        end_loop: 
-        inc edi                    // EDI = EDI + 1
-        jmp begin_loop
+        next_element:
+        inc edi                  // EDI = EDI + 1
+        jmp begin_loop           // Переход в начало цикла
 
-        exit_1:
-        mov sum_result, eax
+        end_loop:
+        mov sum_result, eax      // sum_result = EAX (итоговая сумма)
     }
+
     return sum_result;
 }
 
-int sum_css(std::vector<int> nums, int lim)
+int sum_cpp(int* nums, int lim, int len)
 {
     int sum_result = 0;
-    for (int i = 0; i < nums.size(); i++)
-        if (nums[i] >= lim)
-            sum_result += pow(nums[i], 2);
+    for (int i = 0; i < len; i++) {
+        if (nums[i] >= lim && nums[i] > 0) {
+            sum_result += nums[i] * nums[i] * nums[i];
+        }
+    }
     return sum_result;
 }
 
@@ -55,25 +56,41 @@ int main()
     printf("Ассемблер. Лабораторная работа №3. Выполнил студент группы 6101-020302D Абросимов Артём\n========================================================================================\n");
     printf("Вариант 1. Задание: в одномерном массиве A={a[i]} целых чисел вычислить сумму кубов всех\nположительных элементов массива, удовлетворяющих условию: a[i] >=b. \n");
 
-    int lenght, b;
-    printf("\nВведите длину массива: "); std::cin >> lenght;
+    int length, b; bool flag = true; bool run = true;
     printf("Введите b: "); std::cin >> b;
 
-    std::string word;
-    std::string s;
-    std::vector<int> nums(lenght);
-
-    std::cin.ignore(1000, '\n');
-    printf("\nПоследовательно введите элементы массива через пробел: "); std::getline(std::cin, s);
-    std::stringstream ss(s);
-
-    int j = 0;
-    while (std::getline(ss, word, ' '))
+    while (run)
     {
-        nums[j] = stoi(word);
-        j++;
+        std::string option = "";
+        printf("\nВведите длину массива: "); std::cin >> length;
+
+        if (length <= 0)
+        {
+            printf("Ошибка. Повторите ввод (1) или выйдите из программы (любой символ)\n");
+            std::cin >> option;
+            if (option == "1")
+                continue;
+            else
+            {
+                flag = false;
+                printf("Выход из программы...");
+            }
+        }
+        else
+            run = false;
     }
 
-    printf("\nРезультат вычислений на C++: %d", sum_css(nums, b));
-    printf("\nРезультат вычислений на asm: %d", sum_asm(nums, b));
+    if (flag)
+    {
+        int* nums_asm = new int[length];
+        int* nums_cpp = new int[length];
+
+        for (int i = 0; i < length; i++) {
+            printf("Введите элемент %d: ", i + 1); std::cin >> nums_asm[i];
+            nums_cpp[i] = nums_asm[i];
+        }
+
+        printf("\nРезультат вычислений на C++: %d", sum_cpp(nums_cpp, b, length));
+        printf("\nРезультат вычислений на asm: %d", sum_asm(nums_asm, b, length));
+    }
 }   

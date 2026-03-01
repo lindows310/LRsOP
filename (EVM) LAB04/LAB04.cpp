@@ -10,8 +10,8 @@ double calc_asm(double a, double b)
                                    //   st0            st1            st2            st3        st4
         finit     
         fldz                       //    0
-        fld qword ptr[a]           //    a              0
-        fld qword ptr[a]           //    a              a              0
+        fld a                      //    a              0
+        fld a                      //    a              a              0
         fsincos                    //   cosa           sina            a              0
         fcomi st(0), st(3)         //   cosa не равно нулю - ограничение tana (tana = sina/cosa)
         je error_exit
@@ -26,14 +26,14 @@ double calc_asm(double a, double b)
         fcos                       //   cosa           sina        ctga+tana          0
         faddp st(1), st(0)         // cosa+sina      ctga+tana         0
         faddp st(1), st(0)         //ctga+tana+cosa+sina 0
-        fld qword ptr[a]           //    a      ctga+tana+cosa+sina    0
+        fld a                      //    a      ctga+tana+cosa+sina    0
         fmul st(0), st(0)          //   a*a     ctga+tana+cosa+sina    0
-        fld qword ptr[b]           //    b             a*a     ctga+tana+cosa+sina    0
+        fld b                      //    b             a*a     ctga+tana+cosa+sina    0
         fsubp st(1), st(0)         //   a*a-b   ctga+tana+cosa+sina    0
         fmul Pi                    // Pi(a*a-b) ctga+tana+cosa+sina    0
-        fld qword ptr[b]           //    b          Pi(a*a-b)  ctga+tana+cosa+sina    0
+        fld b                      //    b          Pi(a*a-b)  ctga+tana+cosa+sina    0
         fmul st(0), st(0)          //   b*b         Pi(a*a-b)  ctga+tana+cosa+sina    0
-        fld qword ptr[a]           //    a             b*b         Pi(a*a-b) ctga+tana+cosa+sina 0
+        fld a                      //    a             b*b         Pi(a*a-b) ctga+tana+cosa+sina 0
         faddp st(1), st(0)         //  b*b+a        Pi(a*a-b)  ctga+tana+cosa+sina    0
         fchs                       // -b*b-a        Pi(a*a-b)  ctga+tana+cosa+sina    0
         fcomi st(0), st(3)
@@ -51,7 +51,7 @@ double calc_asm(double a, double b)
         throw 0;
     return res;
 }
-double calc_cpp(int a, int b)
+double calc_cpp(double a, double b)
 {
     return sin(a) + cos(a) + 1 / tan(a) + tan(a) + M_PI * (a * a - b) / (-b * b - a);
 }

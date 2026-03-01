@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(EVM) LAB05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52354570-DEE9-4993-B00F-459B666D1458}|LAB05.vcxproj|C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(EVM) LAB05\\LAB05.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{52354570-DEE9-4993-B00F-459B666D1458}|LAB05.vcxproj|solutionrelative:LAB05.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LAB05.cpp",
+              "DocumentMoniker": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(EVM) LAB05\\LAB05.cpp",
+              "RelativeDocumentMoniker": "LAB05.cpp",
+              "ToolTip": "C:\\Users\\Lidgqqq\\Desktop\\LRs\\LRs\\(EVM) LAB05\\LAB05.cpp",
+              "RelativeToolTip": "LAB05.cpp",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-01T08:23:32.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
