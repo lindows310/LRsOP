@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace LAB01
 {
     internal class Program
@@ -188,7 +187,7 @@ namespace LAB01
                                     case ('1'):
                                         try
                                         {
-                                            ArrayVector result1 = Vectors.SumSt(vec1, vec2);
+                                            ArrayVector result1 = (ArrayVector) Vectors.SumSt(vec1, vec2);
                                             Utils.ColoredWriteLine($"|YELLOW| Сложение векторов |GRAY| произведено |YELLOW| успешно. |GRAY| Результат сложения: {result1.ToString()}");
                                         }
                                         catch (Exception e)
@@ -213,7 +212,7 @@ namespace LAB01
                                         Console.Write("Введите номер вектора и число, на которое вы хотите умножить вектор: ");
                                         string[] options = Console.ReadLine().Split(' ');
 
-                                        ArrayVector result3 = Vectors.MultNumberSt(vectors[Convert.ToInt32(options[0]) - 1], Convert.ToInt32(options[1]));
+                                        ArrayVector result3 = (ArrayVector) Vectors.MultNumberSt(vectors[Convert.ToInt32(options[0]) - 1], Convert.ToInt32(options[1]));
                                         Console.WriteLine($"Результат умножения вектора на число равняется: {result3.ToString()}");
                                         break;
 
@@ -258,8 +257,8 @@ namespace LAB01
                             Console.Clear();
                             Program.PrintTitle();
 
-                            Console.WriteLine("[1] Отобразить информацию об односвязном списке\n[2] Создать односвязный список\n[3] Добавить элемент в начало списка" +
-                                            "\n[4] Добавить элемент в конец списка\n[5] Добавить элемент вовнутрь списка\n[6] Вычислить норму вектора\n[Любой другой символ] Выйти из раздела");
+                            Console.WriteLine("[1] Отобразить информацию об односвязном списке\n[2] Создать односвязный список\n[3] Добавить элемент в начало списка\n[4] Удалить элемент из начала списка" +
+                                            "\n[5] Добавить элемент в конец списка\n[6] Удалить элемент из конца списка\n[7] Добавить элемент вовнутрь списка\n[8] Удалить элемент из списка\n[9] Вычислить норму вектора\n[Любой другой символ] Выйти из раздела");
 
                             Utils.ColoredWrite("|YELLOW| \nВведите опцию: ");
                             char option3 = Console.ReadKey().KeyChar;
@@ -275,7 +274,7 @@ namespace LAB01
                                         Console.WriteLine($"Вектор равен: {linkedListVec.ToString()}");
                                         break;
                                     case ('2'):
-                                        Utils.ColoredWrite("Введите |YELLOW| количество координат |GRAY| вектора: ");
+                                        Utils.ColoredWrite("Введите |YELLOW| количество координат |GRAY| списка: ");
                                         linkedListVec = new LinkedListVector(int.Parse(Console.ReadLine()));
                                         Utils.ColoredWrite($"|YELLOW| Инициализирован вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
@@ -285,17 +284,30 @@ namespace LAB01
                                         Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
                                     case ('4'):
+                                        Utils.ColoredWrite($"|YELLOW| Удалено значение: |GRAY| {linkedListVec[0]}");
+                                        linkedListVec.DeleteFromStart();
+                                        break;
+                                    case ('5'):
                                         Utils.ColoredWrite("Введите |YELLOW| значение узла, |GRAY| который вы хотите добавить в конец списка: ");
                                         linkedListVec.AddToEnd(int.Parse(Console.ReadLine()));
                                         Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
-                                    case ('5'):
+                                    case ('6'):
+                                        Utils.ColoredWrite($"|YELLOW| Удалено значение: |GRAY| {linkedListVec[linkedListVec.Length - 1]}");
+                                        linkedListVec.DeleteFromEnd();
+                                        break;
+                                    case ('7'):
                                         Utils.ColoredWrite("Введите |YELLOW| значение узла |GRAY| и |YELLOW| индекс, |GRAY| по которому вы хотите добавить элемент: ");
                                         string[] input5 = Console.ReadLine().Split(' ');
                                         linkedListVec.AddInBetween(Convert.ToInt32(input5[0]), Convert.ToInt32(input5[1]));
                                         Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
-                                    case ('6'):
+                                    case ('8'):
+                                        Utils.ColoredWrite("Введите |YELLOW| индекс, |GRAY| по которому вы хотите удалить элемент: ");
+                                        string input51 = Console.ReadLine();
+                                        linkedListVec.DeleteFromBetween(Convert.ToInt32(input51));
+                                        break;
+                                    case ('9'):
                                         Utils.ColoredWrite($"|YELLOW| Норма вектора |GRAY| равна: {linkedListVec.GetNorm()}");
                                         break;
                                     default:
@@ -314,7 +326,7 @@ namespace LAB01
                             catch (Exception e)
                             {
                                 Utils.ColoredWriteLine($"|RED| Ошибка. |GRAY| {e.Message}");
-                                }
+                            }
                             Utils.ColoredWriteLine("|YELLOW| \nЧтобы продолжить, нажмите любую клавишу...");
                             Console.ReadKey();
                         }
@@ -351,9 +363,9 @@ namespace LAB01
                                             if (buffer != null)
                                             {
                                                 if (vec.Equals(buffer))
-                                                    Utils.ColoredWriteLine($"Клонированный вектор |YELLOW| равен |GRAY| вектору {vec.ToString()};");
+                                                    Utils.ColoredWriteLine($"Клонированный вектор |YELLOW| равен |GRAY| вектору {vec.ToString()} ({vec.GetType()})");
                                                 else
-                                                    Utils.ColoredWriteLine($"Клонированный вектор |RED| не равен |GRAY| вектору {vec.ToString()}");
+                                                    Utils.ColoredWriteLine($"Клонированный вектор |RED| не равен |GRAY| вектору {vec.ToString()} ({vec.GetType()})");
                                             }
                                             else
                                                 Utils.ColoredWriteLine($"В буфер не был скопирован вектор. Сравнение векторов |RED| возможно только в случае, |GRAY| если в буфер был помещен вектор");
@@ -389,7 +401,8 @@ namespace LAB01
                             Console.Clear();
                             Program.PrintTitle();
 
-                            Console.WriteLine("[1] Создать массив векторов \n[2] Сортировка массива векторов \n[любой другой символ] Выйти из программы");
+                            Console.WriteLine("[1] Отобразить содержимое массива векторов \n[2] Создать массив векторов \n[3] Сортировка массива векторов " +
+                                              "\n[4] Отобразить вектора с максимальным и минимальным количеством координат\n[любой другой символ] Выйти из программы");
 
                             Utils.ColoredWrite(" |YELLOW| \nВведите опцию: ");
                             char option5 = Console.ReadKey().KeyChar;
@@ -402,6 +415,11 @@ namespace LAB01
                                 switch (option5)
                                 {
                                     case ('1'):
+                                        Utils.ColoredWriteLine("Массив векторов:");
+                                        for (int i = 0; i < arrVectors?.Length; i++)
+                                            Utils.ColoredWriteLine($"|YELLOW| [{i + 1}] |GRAY| \t{arrVectors[i].ToString()}");
+                                        break;
+                                    case ('2'):
                                         Utils.ColoredWrite("Введите |YELLOW| длину массива векторов: ");
                                         arrVectors = Vectors.CreateArray(int.Parse(Console.ReadLine()));
                                         Console.WriteLine("Был создан массив векторов:");
@@ -409,12 +427,18 @@ namespace LAB01
                                             Utils.ColoredWriteLine($"|YELLOW| [{i + 1}] |GRAY| \t{arrVectors[i].ToString()}");
                                         break;
 
-                                    case ('2'):
-                                        arrVectors = VectorsCompare.VectorsSort(arrVectors);
+                                    case ('3'):
+                                        arrVectors = Vectors.VectorsSort(arrVectors);
                                         Utils.ColoredWriteLine("Отсортированный |YELLOW| массив векторов:");
                                         for (int i = 0; i < arrVectors.Length; i++)
-                                            Utils.ColoredWriteLine($"|YELLOW| [{i + 1}] |GRAY| \t{arrVectors[i].ToString()}");
+                                            Utils.ColoredWriteLine($"|YELLOW| [{i + 1}] |GRAY| (модуль: {Math.Round(arrVectors[i].GetNorm(), 3)})\t{arrVectors[i].ToString()}");
                                         Console.ReadLine();
+                                        break;
+
+                                    case ('4'):
+                                        (IVectorable minCords, IVectorable maxCords) = Vectors.FindByMinMaxLength(arrVectors);
+                                        Utils.ColoredWriteLine($"Вектор с максимальным числом координат: |YELLOW| {maxCords.ToString()} |GRAY| " +
+                                                             $"\nВектор с минимальным числом координат: |YELLOW| {minCords.ToString()}");
                                         break;
 
                                     default:
@@ -424,9 +448,9 @@ namespace LAB01
                                 Utils.ColoredWriteLine("|YELLOW| \nЧтобы продолжить, нажмите любую клавишу...");
                                 Console.ReadKey();
                             }
-                            catch
+                            catch (Exception e)
                             {
-
+                                Utils.ColoredWriteLine($"|RED| Ошибка. |DARKGRAY| {e.Message}");
                             }
                         }
                         break;

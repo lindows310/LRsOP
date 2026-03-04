@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LAB01
+namespace LAB02
 {
     internal class Utils
     {
         private static Dictionary<string, ConsoleColor> keyColorPairs = new Dictionary<string, ConsoleColor>()
         {
-            {"|RED|",    ConsoleColor.Red },
-            {"|YELLOW|", ConsoleColor.Yellow },
-            {"|DARKGRAY|",  ConsoleColor.DarkGray },
-            {"|GRAY|",   ConsoleColor.Gray },
+            {"|RED|",      ConsoleColor.Red },
+            {"|YELLOW|",   ConsoleColor.Yellow },
+            {"|DARKGRAY|", ConsoleColor.DarkGray },
+            {"|GRAY|",     ConsoleColor.Gray },
 
         };
         public static void ColoredWrite(string message)

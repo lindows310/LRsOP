@@ -171,7 +171,7 @@ namespace LAB01
             string vector = " ";
             for (int i = 0; i < Length; i++)
                 vector += this[i] + " ";
-            return "(" + vector + ")";
+            return $"({Length}) " + "(" + vector + ")";
         }
         public override bool Equals(object obj)
         {
@@ -198,6 +198,10 @@ namespace LAB01
         public object Clone()
         {
             return new ArrayVector { Cords = this.Cords };
+        }
+        public IVectorable Create(int length)
+        {
+            return new ArrayVector(length);
         }
     }
 }

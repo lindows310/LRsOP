@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Runtime;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LAB02;
+using System;
+
 
 namespace LAB01
 {
@@ -72,7 +66,8 @@ namespace LAB01
             {
                 Console.Clear();
                 Program.PrintTitle();
-                Utils.ColoredWriteLine("|YELLOW| Выберите раздел: |GRAY| \n[1] Действия над векторами \n[2] Операции над векторами \n[3] Односвязный список\n[любой другой символ] выход из программы");
+                Utils.ColoredWriteLine("|YELLOW| Выберите раздел: |GRAY| \n[1] Действия над векторами \n[2] Операции над векторами \n[3] Односвязный список" +
+                                                                        "\n[любой другой символ] выход из программы");
                 char optionCat = Console.ReadKey().KeyChar;
                 switch (optionCat)
                 {
@@ -264,8 +259,8 @@ namespace LAB01
                             Console.Clear();
                             Program.PrintTitle();
 
-                            Console.WriteLine("[1] Отобразить информацию об односвязном списке\n[2] Создать односвязный список\n[3] Добавить элемент в начало списка" +
-                                            "\n[4] Добавить элемент в конец списка\n[5] Добавить элемент вовнутрь списка\n[6] Вычислить норму вектора\n[Любой другой символ] Выйти из раздела");
+                            Console.WriteLine("[1] Отобразить информацию об односвязном списке\n[2] Создать односвязный список\n[3] Добавить элемент в начало списка\n[4] Удалить элемент из начала списка" +
+                                            "\n[5] Добавить элемент в конец списка\n[6] Удалить элемент из конца списка\n[7] Добавить элемент вовнутрь списка\n[8] Удалить элемент из списка\n[9] Вычислить норму вектора\n[Любой другой символ] Выйти из раздела");
 
                             Utils.ColoredWrite("|YELLOW| \nВведите опцию: ");
                             char option3 = Console.ReadKey().KeyChar;
@@ -281,7 +276,7 @@ namespace LAB01
                                         Console.WriteLine($"Вектор равен: {linkedListVec.ToString()}");
                                         break;
                                     case ('2'):
-                                        Utils.ColoredWrite("Введите |YELLOW| количество координат |GRAY| вектора: ");
+                                        Utils.ColoredWrite("Введите |YELLOW| количество координат |GRAY| списка: ");
                                         linkedListVec = new LinkedListVector(int.Parse(Console.ReadLine()));
                                         Utils.ColoredWrite($"|YELLOW| Инициализирован вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
@@ -291,17 +286,30 @@ namespace LAB01
                                         Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
                                     case ('4'):
+                                        Utils.ColoredWrite($"|YELLOW| Удалено значение: |GRAY| {linkedListVec[0]}");
+                                        linkedListVec.DeleteFromStart();
+                                        break;
+                                    case ('5'):
                                         Utils.ColoredWrite("Введите |YELLOW| значение узла, |GRAY| который вы хотите добавить в конец списка: ");
                                         linkedListVec.AddToEnd(int.Parse(Console.ReadLine()));
                                         Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
-                                    case ('5'):
+                                    case ('6'):
+                                        Utils.ColoredWrite($"|YELLOW| Удалено значение: |GRAY| {linkedListVec[linkedListVec.Length - 1]}");
+                                        linkedListVec.DeleteFromEnd();
+                                        break;
+                                    case ('7'):
                                         Utils.ColoredWrite("Введите |YELLOW| значение узла |GRAY| и |YELLOW| индекс, |GRAY| по которому вы хотите добавить элемент: ");
                                         string[] input5 = Console.ReadLine().Split(' ');
                                         linkedListVec.AddInBetween(Convert.ToInt32(input5[0]), Convert.ToInt32(input5[1]));
                                         Utils.ColoredWrite($"|YELLOW| Измененный вектор: |GRAY| {linkedListVec.ToString()}");
                                         break;
-                                    case ('6'):
+                                    case ('8'):
+                                        Utils.ColoredWrite("Введите |YELLOW| индекс, |GRAY| по которому вы хотите удалить элемент: ");
+                                        string input51 = Console.ReadLine();
+                                        linkedListVec.DeleteFromBetween(Convert.ToInt32(input51));
+                                        break;
+                                    case ('9'):
                                         Utils.ColoredWrite($"|YELLOW| Норма вектора |GRAY| равна: {linkedListVec.GetNorm()}");
                                         break;
                                     default:
@@ -325,14 +333,12 @@ namespace LAB01
                             Console.ReadKey();
                         }
                         break;
-
                     default:
                         Utils.ColoredWriteLine("|RED| \nВыход из программы...");
                         run = false;
                         break;
                 }
             }
-
         }
     }
 }

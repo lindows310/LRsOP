@@ -1,48 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LAB01
+namespace LAB02
 {
     internal class Utils
     {
-        public static void ColoredWrite(string message, params object[] info)
+        private static Dictionary<string, ConsoleColor> keyColorPairs = new Dictionary<string, ConsoleColor>()
         {
-            string[] words = message.Split(' ');
-            for (int i = 0; i < words.Length; i++)
-            {
-                bool printed = false;
-                foreach (object[] o in info)
+            {"|RED|",      ConsoleColor.Red },
+            {"|YELLOW|",   ConsoleColor.Yellow },
+            {"|DARKGRAY|", ConsoleColor.DarkGray },
+            {"|GRAY|",     ConsoleColor.Gray },
+
+        };
+        public static void ColoredWrite(string message)
+        {
+            string[] temp = message.Split(' ');
+            for (int i = 0; i < temp.Length; i++)
+                if (keyColorPairs.ContainsKey(temp[i]))
+                    Console.ForegroundColor = keyColorPairs[temp[i]];
+                else
                 {
-                    int wordStart = (int)o[0];
-                    int wordEnd = (int)o[1];
-                    ConsoleColor color = (ConsoleColor)o[2];
-
-                    if (wordStart <= i && wordEnd >= i)
-                    {
-                        Console.ForegroundColor = color;
-                        Console.Write(words[i]);
-
-                        if (i != words.Length - 1)
-                            Console.Write(' ');
-
-                        Console.ResetColor();
-                        printed = true;
-                    }
-                }
-                if (!printed)
-                {
-                    Console.Write(words[i]);
-                    if (i != words.Length - 1)
+                    Console.Write(temp[i]);
+                    if (i != temp.Length - 1)
                         Console.Write(' ');
                 }
-            }
+            Console.ResetColor();
         }
-        public static void ColoredWriteLine(string message, params object[] info)
+        public static void ColoredWriteLine(string message)
         {
-            ColoredWrite(message, info);
+            ColoredWrite(message);
             Console.WriteLine();
         }
     }

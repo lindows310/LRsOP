@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayVector.cs" />
+    <Compile Include="IVectorable.cs" />
+    <Compile Include="VectorsCompare.cs" />
     <Compile Include="LinkedListVector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

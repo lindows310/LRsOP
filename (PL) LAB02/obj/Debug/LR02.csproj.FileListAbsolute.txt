@@ -1,0 +1,8 @@
+C:\Users\Lidgqqq\source\repos\LR02\obj\Debug\LR02.csproj.AssemblyReference.cache
+C:\Users\Lidgqqq\source\repos\LR02\obj\Debug\LR02.csproj.CoreCompileInputs.cache
+C:\Users\Lidgqqq\source\repos\LR02\bin\Debug\LR02.exe.config
+C:\Users\Lidgqqq\source\repos\LR02\bin\Debug\LR02.exe
+C:\Users\Lidgqqq\source\repos\LR02\bin\Debug\LR02.pdb
+C:\Users\Lidgqqq\source\repos\LR02\obj\Debug\LR02.exe
+C:\Users\Lidgqqq\source\repos\LR02\obj\Debug\LR02.pdb
+C:\Users\Lidgqqq\source\repos\LR02\obj\Debug\LR02.exe.config

@@ -28,41 +28,45 @@ namespace LAB01
         public LinkedListVector()
         {
             Node currentNode = firstNode;
+            Length = 1;
             for (int i = 1; i < 5; i++)
             {
                 currentNode.nextNode = new Node(0);
                 currentNode = currentNode.nextNode;
+                Length++;
             }
-            Length += 5;
         }
         public LinkedListVector(int length)
         {
             Node currentNode = firstNode;
+            Length = 1;
             for (int i = 0; i < length - 1; i++)
             {
                 currentNode.nextNode = 0;
                 currentNode = currentNode.nextNode;
+                Length++;
             }
-            Length += length - 1;
         }
         public int this[int index]
         {
             get
             {
+                if (index < 0 || index >= Length)
+                    throw new Exception("Не существует элемента, соответствующего данному индексу.");
+
                 Node currentNode = firstNode;
                 for (int i = 0; i < index; i++)
                     currentNode = currentNode.nextNode;
-                if (currentNode == null)
-                    throw new Exception("Не существует элемента, соответствующего данному индексу.");
                 return currentNode.value;
             }
             set
             {
+                if (index < 0 || index >= Length)
+                    throw new Exception("Не существует элемента, соответствующего данному индексу.");
+
                 Node currentNode = firstNode;
                 for (int i = 0; i < index; i++)
                     currentNode = currentNode.nextNode;
-                if (currentNode == null)
-                    throw new Exception("Ошибка. Не существует элемента, соответствующего данному индексу.");
                 currentNode.value = value;
             }
         }
@@ -98,9 +102,26 @@ namespace LAB01
         public double GetNorm()
         {
             double sum = 0;
-            for (int i = 0; i <= Length; i++)
+            for (int i = 0; i < Length; i++)
                 sum += Math.Pow(this[i], 2);
             return Math.Sqrt(sum);
+        }
+        public void DeleteFromEnd()
+        {
+            if (Length == 0)
+                throw new Exception("Список пуст.");
+            if (Length == 1)
+            {
+                firstNode = null;
+                Length--;
+                return;
+            }
+            Node currentNode = firstNode;
+            while (currentNode.nextNode.nextNode != null)
+                currentNode = currentNode.nextNode;
+
+            currentNode.nextNode = null;
+            Length--;
         }
         public void AddToEnd(int value)
         {
@@ -114,6 +135,8 @@ namespace LAB01
         public void DeleteFromStart()
         {
             firstNode = firstNode.nextNode;
+
+            Length--;
         }
         public void AddToStart(int value)
         {
@@ -124,26 +147,56 @@ namespace LAB01
         }
         public void AddInBetween(int value, int index)
         {
-            if (index > 1 && index < Length)
+            if (index < 1 || index > Length + 1)
             {
-                Node currentNode = firstNode;
-                for (int i = 0; i < index - 1; i++)
-                    currentNode = currentNode.nextNode;
-                currentNode.nextNode = new Node(value, currentNode.nextNode);
+                throw new Exception("Не существует элемента, соответствующего индексу.");
             }
-            else if (index == 1 || index >= Length)
+            if (index == 1)
             {
-                if (index == 1)
-                {
-                    Node temp = firstNode.nextNode;
-                    firstNode = new Node(value, temp);
-                    Length++;
-                }
-                else
-                    AddToEnd(value);
+                AddToStart(value);
+            }
+            else if (index == Length + 1)
+            {
+                AddToEnd(value);
             }
             else
+            {
+                Node currentNode = firstNode;
+
+                for (int i = 1; i < index - 1; i++)
+                    currentNode = currentNode.nextNode;
+                currentNode.nextNode = new Node(value, currentNode.nextNode);
+
+                Length++;
+            }
+        }
+        public void DeleteFromBetween(int index)
+        {
+            if (index < 1 || index > Length + 1)
+            {
                 throw new Exception("Не существует элемента, соответствующего индексу.");
+            }
+            if (index == 1)
+            {
+                DeleteFromStart();
+            }
+            else if (index == Length + 1)
+            {
+                DeleteFromEnd();
+            }
+            else
+            {
+                Node currentNode = firstNode;
+
+                for (int i = 1; i < index - 1; i++)
+                    currentNode = currentNode.nextNode;
+
+                Node temp = currentNode.nextNode.nextNode;
+                currentNode.nextNode = null;
+                currentNode.nextNode = temp;
+
+                Length--;
+            }
         }
         public override string ToString()
         {
@@ -154,7 +207,7 @@ namespace LAB01
                 vector += currentNode.value + " ";
                 currentNode = currentNode.nextNode;
             }
-            return "(" + vector + ")";
+            return $"({Length}) " + "(" + vector + ")";
         }
         public override bool Equals(object obj)
         {
@@ -184,6 +237,10 @@ namespace LAB01
             for (int i = 0; i < this.Length; i++)
                 vec[i] = this[i];
             return vec;
+        }
+        public IVectorable Create(int length)
+        {
+            return new LinkedListVector(length);
         }
     }
 }

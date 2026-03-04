@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LAB02;
+using System;
 
-namespace LAB01
+namespace LAB02
 {
     internal class ArrayVector
     {
@@ -15,10 +11,34 @@ namespace LAB01
             get { return cords; }
             set { cords = value; }
         }
+        public int Length
+        {
+            get { return cords.Length; }
+        }
         public int this[int index]
         {
-            get { return Cords[index]; }
-            set { Cords[index] = value; }
+            get
+            {
+                try
+                {
+                    return Cords[index];
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    throw new Exception($"Ошибка. Не существует элемента с индексом {index}");
+                }
+            }
+            set
+            {
+                try
+                {
+                    Cords[index] = value;
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    throw new Exception($"Ошибка. Не существует элемента с индексом {index}");
+                }
+            }
         }
         public ArrayVector()
         {
@@ -35,22 +55,22 @@ namespace LAB01
             {
                 try
                 {
-                    Cords[i] = int.Parse(temp[i]);
+                    this[i] = int.Parse(temp[i]);
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Неправильный формат ввода. В координату записано значение 0.", new object[] { 0, 3, ConsoleColor.Red }, new object[] { 4, 8, ConsoleColor.DarkGray });
-                    Cords[i] = 0;
+                    Utils.ColoredWriteLine($"|RED| ({i + 1}) Неправильный формат ввода. |DARKGRAY| В координату записано значение 0.");
+                    this[i] = 0;
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Компоненте не было происвоено значение. {i + 1}-ая координата равна 0.", new object[] { 0, 5, ConsoleColor.Red }, new object[] { 6, 9, ConsoleColor.DarkGray });
-                    Cords[i] = 0;
+                    Utils.ColoredWriteLine($"|RED| ({i + 1}) Компоненте не было происвоено значение. |DARKGRAY| {i + 1}-ая координата равна 0.");
+                    this[i] = 0;
                 }
-                catch (OverflowException e)
+                catch (OverflowException)
                 {
-                    Utils.ColoredWriteLine($"({i + 1}) Значение, присваиваемое компоненте, не принадлежит области определения типа int. Координате присвоено значение 1", new object[] { 0, 9, ConsoleColor.Red }, new object[] { 10, 13, ConsoleColor.DarkGray });
-                    Cords[i] = 1;
+                    Utils.ColoredWriteLine($"|RED| ({i + 1}) Неправильный формат ввода. |DARKGRAY| В координату записано значение 0.");
+                    this[i] = 1;
                 }
             }
         }
@@ -65,11 +85,11 @@ namespace LAB01
         {
             int sum = 0; bool elFound = false;
 
-            for (int i = 1; i < Cords.Length + 1; i++)
-                if (i % 2 == 0 && Cords[i - 1] > 0)
+            for (int i = 1; i < Length + 1; i++)
+                if (i % 2 == 0 && this[i - 1] > 0)
                 {
                     elFound = true;
-                    sum += Cords[i - 1];
+                    sum += this[i - 1];
                 }
 
             if (elFound == false)
@@ -81,15 +101,15 @@ namespace LAB01
         {
             int sum = 0; double average = 0; bool elFound = false;
 
-            for (int i = 0; i < Cords.Length; i++)
+            for (int i = 0; i < Length; i++)
                 average += Math.Abs(Cords[i]);
-            average = average / Cords.Length;
+            average /= Length;
 
-            for (int i = 1; i < Cords.Length + 1; i++)
-                if (i % 2 == 1 && Cords[i - 1] < average)
+            for (int i = 1; i < Length + 1; i++)
+                if (i % 2 == 1 && this[i - 1] < average)
                 {
                     elFound = true;
-                    sum += Cords[i - 1];
+                    sum += this[i - 1];
                 }
 
             if (elFound == false)
@@ -101,11 +121,11 @@ namespace LAB01
         {
             int mult = 1; bool elFound = false;
 
-            for (int i = 0; i < Cords.Length; i++)
-                if (Cords[i] > 0 && Cords[i] % 2 == 0)
+            for (int i = 0; i < Length; i++)
+                if (this[i] > 0 && this[i] % 2 == 0)
                 {
                     elFound = true;
-                    mult *= Cords[i];
+                    mult *= this[i];
                 }
 
             if (elFound == false)
@@ -116,11 +136,11 @@ namespace LAB01
         public int MultNechet()
         {
             int mult = 1; bool elFound = false;
-            for (int i = 0; i < Cords.Length; i++)
-                if (Cords[i] % 3 != 0 && Math.Abs(Cords[i]) % 2 == 1)
+            for (int i = 0; i < Length; i++)
+                if (this[i] % 3 != 0 && Math.Abs(this[i]) % 2 == 1)
                 {
                     elFound = true;
-                    mult *= Cords[i];
+                    mult *= this[i];
                 }
 
             if (elFound == false)
@@ -130,8 +150,8 @@ namespace LAB01
         }
         public void SortUp()
         {
-            for (int s = Cords.Length / 2; s > 0; s /= 2)
-                for (int i = s; i < Cords.Length; i++)
+            for (int s = Length / 2; s > 0; s /= 2)
+                for (int i = s; i < Length; i++)
                     for (int j = i - s; j >= 0 && this[j] > this[j + s]; j -= s)
                     {
                         int temp = this[j];
@@ -142,17 +162,17 @@ namespace LAB01
         public void SortDown()
         {
             SortUp();
-            int[] temp = new int[Cords.Length];
-            for (int i = Cords.Length - 1, j = 0; i >= 0; i--, j++)
+            int[] temp = new int[Length];
+            for (int i = Length - 1, j = 0; i >= 0; i--, j++)
                 temp[j] = this[i];
             Cords = temp;
         }
         public override string ToString()
         {
             string vector = " ";
-            for (int i = 0; i < Cords.Length; i++)
+            for (int i = 0; i < Length; i++)
                 vector += this[i] + " ";
-            return vector = "(" + vector + ")";
+            return "(" + vector + ")";
         }
     }
 }

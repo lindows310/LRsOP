@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LAB02;
+using LR02;
+using System;
 
-namespace LAB01
+namespace LAB02
 {
-    public interface IVectorable<T>
-    {
-        T this[int index] { get; set; }
-        int Length { get; }
-        double GetNorm();
-    }
-
-    internal class ArrayVector : IVectorable<int>
+    internal class ArrayVector : IVectorable
     {
         private int[] cords;
         public int[] Cords
@@ -183,7 +173,7 @@ namespace LAB01
             string vector = " ";
             for (int i = 0; i < Length; i++)
                 vector += this[i] + " ";
-            return $"Кол-во коорд.: [{Length}]; " + "(" + vector + ")";
+            return $"{Length} " + "(" + vector + ")";
         }
     }
 }
