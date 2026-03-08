@@ -1,0 +1,104 @@
+﻿  ASMLAB05.cpp
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(14,2): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(16,3): error C2065: 'finit': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(17,3): error C2065: 'fldz': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(18,3): error C2065: 'fld1': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(19,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(19,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(19,7): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(19,7): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(20,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(20,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(20,7): error C2146: syntax error: missing ';' before identifier 'x'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(21,3): error C2146: syntax error: missing ';' before identifier 'fcomi'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(21,3): error C2065: 'fcomi': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(21,9): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(21,9): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(21,16): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(22,3): error C2146: syntax error: missing ';' before identifier 'jle'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(22,3): error C2065: 'jle': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(22,7): error C2146: syntax error: missing ';' before identifier 'error_exit'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(22,7): error C2065: 'error_exit': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(23,3): error C2146: syntax error: missing ';' before identifier 'fyl2x'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(23,3): error C2065: 'fyl2x': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(24,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(24,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(24,7): error C2146: syntax error: missing ';' before identifier 'k1'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(25,3): error C2146: syntax error: missing ';' before identifier 'fmulp'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(25,3): error C2065: 'fmulp': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(25,9): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(25,9): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(25,16): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(26,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(26,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(26,7): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(26,7): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(27,3): error C2146: syntax error: missing ';' before identifier 'frndint'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(27,3): error C2065: 'frndint': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(28,3): error C2146: syntax error: missing ';' before identifier 'fsub'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(28,3): error C2065: 'fsub': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(28,8): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(28,8): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(28,15): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(29,3): error C2146: syntax error: missing ';' before identifier 'fxch'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(29,3): error C2065: 'fxch': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(29,8): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(29,8): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(30,3): error C2146: syntax error: missing ';' before identifier 'f2xm1'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(30,3): error C2065: 'f2xm1': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(31,3): error C2146: syntax error: missing ';' before identifier 'fld1'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(31,3): error C2065: 'fld1': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(32,3): error C2146: syntax error: missing ';' before identifier 'faddp'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(32,3): error C2065: 'faddp': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(32,9): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(32,9): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(32,16): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(33,3): error C2146: syntax error: missing ';' before identifier 'fscale'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(33,3): error C2065: 'fscale': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(34,3): error C2146: syntax error: missing ';' before identifier 'fstp'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(34,3): error C2065: 'fstp': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(34,8): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(34,8): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(35,3): error C2146: syntax error: missing ';' before identifier 'fxch'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(35,3): error C2065: 'fxch': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(35,8): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(35,8): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(36,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(36,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(36,7): error C2146: syntax error: missing ';' before identifier 'k2'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(37,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(37,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(37,7): error C2146: syntax error: missing ';' before identifier 'x'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(38,3): error C2146: syntax error: missing ';' before identifier 'fmulp'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(38,3): error C2065: 'fmulp': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(38,9): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(38,9): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(38,16): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(39,3): error C2146: syntax error: missing ';' before identifier 'fld'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(39,3): error C2065: 'fld': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(39,7): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(39,7): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(40,3): error C2146: syntax error: missing ';' before identifier 'frndint'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(40,3): error C2065: 'frndint': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(41,3): error C2146: syntax error: missing ';' before identifier 'fsub'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(41,3): error C2065: 'fsub': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(41,8): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(41,8): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(41,15): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(42,3): error C2146: syntax error: missing ';' before identifier 'fxch'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(42,3): error C2065: 'fxch': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(42,8): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(42,8): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(43,3): error C2146: syntax error: missing ';' before identifier 'f2xm1'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(43,3): error C2065: 'f2xm1': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(44,3): error C2146: syntax error: missing ';' before identifier 'fld1'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(44,3): error C2065: 'fld1': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(45,3): error C2146: syntax error: missing ';' before identifier 'faddp'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(45,3): error C2065: 'faddp': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(45,9): error C2146: syntax error: missing ';' before identifier 'st'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(45,9): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(45,16): error C3861: 'st': identifier not found
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(46,3): error C2146: syntax error: missing ';' before identifier 'fscale'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(46,3): error C2065: 'fscale': undeclared identifier
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(47,3): error C2146: syntax error: missing ';' before identifier 'fstp'
+C:\Users\Lidgqqq\Desktop\LRs\LRs\(EVM) LAB05\ASMLAB05.cpp(47,3): error C1003: error count exceeds 100; stopping compilation
